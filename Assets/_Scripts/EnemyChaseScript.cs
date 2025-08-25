@@ -120,25 +120,25 @@ public class EnemyChaseScript : MonoBehaviour
     void enemyLOS()
     {
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, lineOfSightRange, LayerMask.GetMask("Player"));
-        foreach (Collider2D hit in hits)
+        if (hits.Length > 0)
         {
-            PlayerInputScript player = hit.GetComponent<PlayerInputScript>();
+            PlayerInputScript player = hits[0].GetComponent<PlayerInputScript>();
             if (player != null)
             {
                 if (LineOfSight(player.transform))
                 {
                     target = player.transform;
                     UpdateBehaviour();
-                    break;
-                }
-                else
-                {
-                    target = null;
-                    agent.SetDestination(transform.position);
-                    agent.isStopped = true;
-                    break;
+                    return;
                 }
             }
+        }
+        else
+        {
+            target = null;
+            agent.SetDestination(transform.position);
+            agent.isStopped = true;
+            return;
         }
     }
 
@@ -150,7 +150,6 @@ public class EnemyChaseScript : MonoBehaviour
             PlayerInputScript player = hits[0].GetComponent<PlayerInputScript>();
             if (player != null)
             {
-                Debug.Log("Proximity");
                 target = player.transform;
                 UpdateBehaviour();
                 return;
@@ -190,7 +189,6 @@ public class EnemyChaseScript : MonoBehaviour
         {
             if (!agent.pathPending && agent.remainingDistance < 0.1f)
             {
-                Debug.Log($"Patrolled at {count}");
                 if (count == 0)
                 {
                     reachedMax = false;
