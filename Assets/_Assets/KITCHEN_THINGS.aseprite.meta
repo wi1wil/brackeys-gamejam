@@ -270,7 +270,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 156
+      y: 154
       width: 34
       height: 61
     spriteID: 0362f3b96aa7e1b44b17601b04ccefb1
@@ -310,9 +310,9 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 72
-      y: 179
+      y: 180
       width: 117
-      height: 42
+      height: 39
     spriteID: a26a35eb1d98ae844a0834d09570d11a
     spriteBone: []
     spriteOutline: []
@@ -330,7 +330,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 190
-      y: 156
+      y: 154
       width: 33
       height: 61
     spriteID: e52ff1d3db7ce374eb7ee1d74b164399
@@ -350,7 +350,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 93
+      y: 91
       width: 18
       height: 44
     spriteID: e1d03862b6b544844a7bd6caefde76f1
@@ -370,7 +370,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 36
-      y: 105
+      y: 103
       width: 18
       height: 47
     spriteID: abafa573b6294514285df4a09415955a
@@ -390,7 +390,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 100
-      y: 137
+      y: 135
       width: 16
       height: 17
     spriteID: c708dcd36582b8046b2e193ff1488961
@@ -410,7 +410,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 148
-      y: 137
+      y: 135
       width: 16
       height: 18
     spriteID: 703d065d6c3da2747850b5eb99ec4c58
@@ -430,7 +430,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 178
-      y: 105
+      y: 103
       width: 18
       height: 47
     spriteID: d063b39a1ac9f93429ccc92299fa707c
@@ -450,7 +450,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 205
-      y: 92
+      y: 90
       width: 18
       height: 44
     spriteID: ae71f82066316834082a62b61b31d6db
@@ -472,7 +472,7 @@ ScriptedImporter:
       x: 5
       y: 51
       width: 49
-      height: 38
+      height: 36
     spriteID: ea5d9fb5b0956d542b7d8529eb0e1d4c
     spriteBone: []
     spriteOutline: []
@@ -492,7 +492,7 @@ ScriptedImporter:
       x: 55
       y: 51
       width: 134
-      height: 38
+      height: 36
     spriteID: 6531d86e0f0e9554f93bea4415bb905b
     spriteBone: []
     spriteOutline: []
@@ -512,7 +512,7 @@ ScriptedImporter:
       x: 190
       y: 51
       width: 32
-      height: 38
+      height: 36
     spriteID: 6c82d1da6154d6a459180dad4c403bfc
     spriteBone: []
     spriteOutline: []
@@ -532,7 +532,7 @@ ScriptedImporter:
       x: 5
       y: 4
       width: 49
-      height: 37
+      height: 35
     spriteID: c256a333c25a3fb45b5d0630bdeaa91e
     spriteBone: []
     spriteOutline: []
@@ -552,7 +552,7 @@ ScriptedImporter:
       x: 55
       y: 4
       width: 134
-      height: 37
+      height: 36
     spriteID: 505326919872ef341948342ff755f8ca
     spriteBone: []
     spriteOutline: []
@@ -572,7 +572,7 @@ ScriptedImporter:
       x: 190
       y: 4
       width: 32
-      height: 37
+      height: 35
     spriteID: d8aedc752f43c6545b9ce84924e6797c
     spriteBone: []
     spriteOutline: []
@@ -590,7 +590,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 137
+      y: 135
       width: 18
       height: 16
     spriteID: 983789c8871ba2246aec36a28bb184b2
@@ -610,7 +610,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 205
-      y: 136
+      y: 134
       width: 18
       height: 16
     spriteID: 7127b25104fe3284db290d95a1d168df
@@ -642,6 +642,46 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
+  - name: KITCHEN_THINGS_25
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 244
+      y: 117
+      width: 16
+      height: 36
+    spriteID: 1a42ddde56b113640859d6080149a25c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: KITCHEN_THINGS_26
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 276
+      y: 99
+      width: 16
+      height: 54
+    spriteID: df6215e04a52dbc47a0f37b22ca24056
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
     guid: -1559152722
@@ -655,7 +695,7 @@ ScriptedImporter:
       cellRect:
         x: 64
         y: 50
-        width: 256
+        width: 288
         height: 259
       spriteId: 198eb19fa0ef1cd4d97573a7aab49c71
     linkedCells: []

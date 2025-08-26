@@ -207,9 +207,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  lineOfSightRange: 5
+  lineOfSightRange: 10
   proximityRange: 10
-  patrolRange: 7.5
+  patrolRange: 12.5
   count: 0
   total: 0
   isLOS: 0

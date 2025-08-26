@@ -1,9 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Transactions;
-using System.Xml.Schema;
-using UnityEditor;
-using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UIElements;
@@ -11,9 +5,9 @@ using UnityEngine.UIElements;
 public class EnemyChaseScript : MonoBehaviour
 {
     public float speed = 2f;
-    public float lineOfSightRange = 5f;
+    public float lineOfSightRange = 10f;
     public float proximityRange = 10f;
-    public float patrolRange = 7.5f;
+    public float patrolRange = 12.5f;
     public int count = 0;
     public int total = 0;
 
@@ -42,6 +36,7 @@ public class EnemyChaseScript : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
+        
 
         if (gameObject.CompareTag("Patrol"))
         {

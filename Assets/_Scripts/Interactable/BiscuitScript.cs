@@ -1,12 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class BiscuitScript : MonoBehaviour, IInteractable
 {
+    ScoringScript scoringScript;
+    ObesityScript obesityScript;
+
+    public int biscuitsValue;
+
+    void Start()
+    {
+        scoringScript = GetComponent<ScoringScript>();
+        obesityScript = GetComponent<ObesityScript>();  
+    }
+
     public void Interact()
     {
-        Debug.Log("I just ate this shit nigga!");
+        Debug.Log($"Added {biscuitsValue}");
+        scoringScript.AddScore(biscuitsValue);
+        obesityScript.AddType();
+        Destroy(gameObject);
     }
 }

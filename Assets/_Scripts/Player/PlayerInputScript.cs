@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.XR.Haptics;
 
 public class PlayerInputScript : MonoBehaviour
 {
@@ -10,13 +11,17 @@ public class PlayerInputScript : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    PlayerLadderScript playerLadderScript;
+
     void Start()
     {
+        playerLadderScript = GetComponent<PlayerLadderScript>();
         rb = GetComponent<Rigidbody2D>();
     }
 
     public void OnMove(InputAction.CallbackContext context)
     {
+        if (playerLadderScript.isClimbing) return;
         movementInput = context.ReadValue<Vector2>();
     }
 

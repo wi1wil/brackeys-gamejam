@@ -7,6 +7,7 @@ TagManager:
   - LOS
   - Proximity
   - Patrol
+  - Ladder
   layers:
   - Default
   - TransparentFX
@@ -49,4 +50,7 @@ TagManager:
     locked: 0
   - name: Bottom
     uniqueID: 3619304767
+    locked: 0
+  - name: Ladder
+    uniqueID: 1946944641
     locked: 0

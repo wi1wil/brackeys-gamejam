@@ -1,11 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
-public class ScoringScript : MonoBehaviour, IInteractable
+public class ScoringScript : MonoBehaviour
 {
-    public void Interact()
+    public int playerScore;
+    public TextMeshProUGUI scoreText;
+
+    public void AddScore(int value)
     {
-        Debug.Log("I just gave this bitch cookies");
+        playerScore += value;
+        UpdateScore();
+    }
+
+    public void UpdateScore()
+    {
+        scoreText.text = $"Score: {playerScore}";
     }
 }
