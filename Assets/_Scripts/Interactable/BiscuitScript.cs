@@ -10,8 +10,8 @@ public class BiscuitScript : MonoBehaviour, IInteractable
 
     void Start()
     {
-        scoringScript = GetComponent<ScoringScript>();
-        obesityScript = GetComponent<ObesityScript>();  
+        scoringScript = FindAnyObjectByType<ScoringScript>();
+        obesityScript = FindAnyObjectByType<ObesityScript>();  
     }
 
     public void Interact()

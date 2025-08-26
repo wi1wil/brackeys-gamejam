@@ -1,3 +1,5 @@
+using System.Collections;
+using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UIElements;
@@ -14,21 +16,26 @@ public class EnemyChaseScript : MonoBehaviour
     public bool isLOS = false;
     public bool isProximity = false;
     public bool isPatrol = false;
-
+    public bool isDroppingPoison = false;
 
     public bool reachedMax = false;
     public bool reachedMin = false;
 
     public Transform target;
+    public GameObject ratPoison;
+    public GameObject poisonParent;
     public GameObject patrolPoints;
     public Transform[] points;
 
+    StagesScript stagesScript;
     SpriteRenderer spriteRenderer;
     NavMeshAgent agent;
 
     void Start()
     {
+        stagesScript = FindAnyObjectByType<StagesScript>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        poisonParent = GameObject.Find("PoisonParent");
     }
 
     void OnEnable()
@@ -36,7 +43,6 @@ public class EnemyChaseScript : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
-        
 
         if (gameObject.CompareTag("Patrol"))
         {
@@ -103,13 +109,13 @@ public class EnemyChaseScript : MonoBehaviour
         }
 
         if (target != null)
-            {
-                Vector3 origin = transform.position;
-                bool clear = LineOfSight(target);
+        {
+            Vector3 origin = transform.position;
+            bool clear = LineOfSight(target);
 
-                Gizmos.color = clear ? Color.green : Color.yellow;
-                Gizmos.DrawLine(origin, target.position);
-            }
+            Gizmos.color = clear ? Color.green : Color.yellow;
+            Gizmos.DrawLine(origin, target.position);
+        }
     }
 
     void enemyLOS()
@@ -165,7 +171,7 @@ public class EnemyChaseScript : MonoBehaviour
         if (hits.Length > 0)
         {
             PlayerInputScript player = hits[0].GetComponent<PlayerInputScript>();
-            if (player != null)
+            if (player != null && stagesScript.currentStageLevel != 2)
             {
                 isPatrol = false;
                 target = player.transform;
@@ -178,7 +184,7 @@ public class EnemyChaseScript : MonoBehaviour
             isPatrol = true;
             target = null;
         }
-        
+
         // Patrol movement
         if (points.Length > 0 && isPatrol)
         {
@@ -206,6 +212,13 @@ public class EnemyChaseScript : MonoBehaviour
                 agent.SetDestination(points[count].position);
             }
         }
+
+
+        // While patrolling drop rat poison if currentStage = 2;
+        if (stagesScript.currentStageLevel == 2 && !isDroppingPoison)
+        {
+            StartCoroutine(droppingPoison());
+        }
     }
 
     public bool LineOfSight(Transform target)
@@ -226,5 +239,14 @@ public class EnemyChaseScript : MonoBehaviour
             agent.speed = speed;
             agent.SetDestination(target.position);
         }
+    }
+
+    IEnumerator droppingPoison()
+    {
+        isDroppingPoison = true;
+        GameObject poison = Instantiate(ratPoison, transform.position, Quaternion.identity, poisonParent.transform);
+        yield return new WaitForSeconds(5f);
+        Destroy(poison, 15f);
+        isDroppingPoison = false;
     }
 }

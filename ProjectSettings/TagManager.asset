@@ -8,6 +8,9 @@ TagManager:
   - Proximity
   - Patrol
   - Ladder
+  - Stage1
+  - Stage2
+  - Stage3
   layers:
   - Default
   - TransparentFX
