@@ -21,7 +21,7 @@ public class PlayerHealthScript : MonoBehaviour
         UpdateHealthBar();
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalMaterial = spriteRenderer.material;
-        gameOverScript = GetComponent<GameOverScript>();
+        gameOverScript = FindAnyObjectByType<GameOverScript>();
         currentHealth = maxHealth;
     }
 
@@ -39,10 +39,7 @@ public class PlayerHealthScript : MonoBehaviour
             Debug.Log("You died!");
             gameOverScript.gameOver();
         }
-        else
-        {
-            StartCoroutine(DamageFlash());
-        }
+        StartCoroutine(DamageFlash());
     }
 
     public void UpdateHealthBar()

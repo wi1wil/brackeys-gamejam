@@ -1,0 +1,951 @@
+fileFormatVersion: 2
+guid: 1330619ee8779784aa5dfeb8d800e379
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: tikus_Frame_0
+    originalName: 
+    pivot: {x: 1.016129, y: -0.07462686}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 93
+      y: 4
+      width: 62
+      height: 67
+    spriteID: 098fe2d749a82d74aabfc39cb4cfe945
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 93, y: 4}
+  - name: tikus_Frame_21
+    originalName: 
+    pivot: {x: 1.016129, y: -0.07462686}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 163
+      y: 4
+      width: 62
+      height: 67
+    spriteID: ef2e5935f54184c40961de78338a2b0d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 163, y: 4}
+  - name: tikus_Frame_22
+    originalName: 
+    pivot: {x: 0.7777778, y: -0.05970149}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 81
+      height: 67
+    spriteID: 03b84ee0f33b6c74788fb8505873dd48
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: tikus_Frame_23
+    originalName: 
+    pivot: {x: 1.016129, y: -0.07462686}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 233
+      y: 4
+      width: 62
+      height: 67
+    spriteID: 2e63560a2aedb4748b18c5016280b96c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 233, y: 4}
+  - name: tikus_Frame_24
+    originalName: 
+    pivot: {x: 1.016129, y: -0.05970149}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 303
+      y: 4
+      width: 62
+      height: 67
+    spriteID: 4301b5deb976dbb49b28e2af0e64d028
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 303, y: 4}
+  - name: tikus_Frame_25
+    originalName: 
+    pivot: {x: 1.016129, y: -0.07462686}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 373
+      y: 4
+      width: 62
+      height: 67
+    spriteID: 9d8b12b79c1e80649a1666d542b66dd5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 373, y: 4}
+  - name: tikus_Frame_26
+    originalName: 
+    pivot: {x: 1.016129, y: -0.05970149}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 443
+      y: 4
+      width: 62
+      height: 67
+    spriteID: 31370200677015644bbb7c430b0c8d87
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 443, y: 4}
+  - name: tikus_Frame_27
+    originalName: 
+    pivot: {x: 1.016129, y: -0.07462686}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 79
+      width: 62
+      height: 67
+    spriteID: 9f98e554c0ebf734d86306a6d46a2ea3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 79}
+  - name: tikus_Frame_28
+    originalName: 
+    pivot: {x: 1.016129, y: -0.08955224}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 74
+      y: 79
+      width: 62
+      height: 67
+    spriteID: 83ab50232e87c364eb6cd6fa7b1f53de
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 74, y: 79}
+  - name: tikus_Frame_1
+    originalName: 
+    pivot: {x: 0.9074074, y: -0.097222224}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 154
+      width: 54
+      height: 72
+    spriteID: eb6fad4f368da264db5b9fd4ef65423d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 128, y: 154}
+  - name: tikus_Frame_2
+    originalName: 
+    pivot: {x: 0.9074074, y: -0.083333336}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 190
+      y: 154
+      width: 54
+      height: 72
+    spriteID: 2fd990adae4fc65458d01115523d30a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 190, y: 154}
+  - name: tikus_Frame_3
+    originalName: 
+    pivot: {x: 0.9074074, y: -0.09859155}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 128
+      y: 235
+      width: 54
+      height: 71
+    spriteID: 7e082b9415e0ded418325ab5cb2b5423
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 128, y: 235}
+  - name: tikus_Frame_4
+    originalName: 
+    pivot: {x: 0.9074074, y: -0.112676054}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 190
+      y: 235
+      width: 54
+      height: 71
+    spriteID: 9de2f856f5274a14484254227990c8f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 190, y: 235}
+  - name: tikus_Frame_5
+    originalName: 
+    pivot: {x: 0.9074074, y: -0.13432835}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 144
+      y: 79
+      width: 54
+      height: 67
+    spriteID: 021ebe680dc32ee478fab31472599392
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 144, y: 79}
+  - name: tikus_Frame_6
+    originalName: 
+    pivot: {x: 0.9074074, y: -0.1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 376
+      y: 235
+      width: 54
+      height: 70
+    spriteID: fd73ae9b59008cb4e8326adeebacc991
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 376, y: 235}
+  - name: tikus_Frame_7
+    originalName: 
+    pivot: {x: 0.9074074, y: -0.08219179}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 154
+      width: 54
+      height: 73
+    spriteID: d6fe011e9ceb0be46b6b5b860e62baef
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 154}
+  - name: tikus_Frame_8
+    originalName: 
+    pivot: {x: 0.9074074, y: -0.097222224}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 154
+      width: 54
+      height: 72
+    spriteID: 73caed9c055954643b1ed069f1472716
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 154}
+  - name: tikus_Frame_9
+    originalName: 
+    pivot: {x: 0.9074074, y: -0.097222224}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 314
+      y: 154
+      width: 54
+      height: 72
+    spriteID: bcc1d913baac5ac4a8d9aab0c49ca0a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 314, y: 154}
+  - name: tikus_Frame_10
+    originalName: 
+    pivot: {x: 0.9074074, y: -0.14925373}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 206
+      y: 79
+      width: 54
+      height: 67
+    spriteID: ea4d8df9dc116d5459c591c86381b171
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 206, y: 79}
+  - name: tikus_Frame_11
+    originalName: 
+    pivot: {x: 0.0925926, y: -0.097222224}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 376
+      y: 154
+      width: 54
+      height: 72
+    spriteID: cfe99a82ee1d4814c847a50a9e0a28ab
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 376, y: 154}
+  - name: tikus_Frame_12
+    originalName: 
+    pivot: {x: 0.0925926, y: -0.083333336}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 438
+      y: 154
+      width: 54
+      height: 72
+    spriteID: 32a670d5ceedc8f47ac7757fd1f9dd07
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 438, y: 154}
+  - name: tikus_Frame_13
+    originalName: 
+    pivot: {x: 0.0925926, y: -0.09859155}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 252
+      y: 235
+      width: 54
+      height: 71
+    spriteID: 9869242ed505e834c926446eca9206b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 252, y: 235}
+  - name: tikus_Frame_14
+    originalName: 
+    pivot: {x: 0.0925926, y: -0.112676054}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 314
+      y: 235
+      width: 54
+      height: 71
+    spriteID: 0b23b59ee099a9e4b9faef5b26b336a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 314, y: 235}
+  - name: tikus_Frame_15
+    originalName: 
+    pivot: {x: 0.0925926, y: -0.13432835}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 268
+      y: 79
+      width: 54
+      height: 67
+    spriteID: d8712132ce63b5d4c945b30517ee4c83
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 268, y: 79}
+  - name: tikus_Frame_16
+    originalName: 
+    pivot: {x: 0.0925926, y: -0.1}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 438
+      y: 235
+      width: 54
+      height: 70
+    spriteID: f2c923030d2e2f9489891d6a9f160e9e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 438, y: 235}
+  - name: tikus_Frame_17
+    originalName: 
+    pivot: {x: 0.0925926, y: -0.08219179}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 154
+      width: 54
+      height: 73
+    spriteID: fe4856c9a9578504099acb95a57fe644
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 154}
+  - name: tikus_Frame_18
+    originalName: 
+    pivot: {x: 0.0925926, y: -0.097222224}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 235
+      width: 54
+      height: 72
+    spriteID: a3fa0bab8fb17ed4bb7b70a449e015c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 235}
+  - name: tikus_Frame_19
+    originalName: 
+    pivot: {x: 0.0925926, y: -0.097222224}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 66
+      y: 235
+      width: 54
+      height: 72
+    spriteID: ad0b977a8cdccbe44a55c1cc5f21fa2a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 66, y: 235}
+  - name: tikus_Frame_20
+    originalName: 
+    pivot: {x: 0.0925926, y: -0.14925373}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 330
+      y: 79
+      width: 54
+      height: 67
+    spriteID: 85b619929a846ce49869f7dee2e48450
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 330, y: 79}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 313624046
+    name: tikus
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: tikus_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 1
+        y: 5
+        width: 62
+        height: 67
+      spriteId: 098fe2d749a82d74aabfc39cb4cfe945
+    - name: tikus_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 1
+        y: 5
+        width: 62
+        height: 67
+      spriteId: ef2e5935f54184c40961de78338a2b0d
+    - name: tikus_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 1
+        y: 4
+        width: 81
+        height: 67
+      spriteId: 03b84ee0f33b6c74788fb8505873dd48
+    - name: tikus_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 1
+        y: 5
+        width: 62
+        height: 67
+      spriteId: 2e63560a2aedb4748b18c5016280b96c
+    - name: tikus_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 1
+        y: 4
+        width: 62
+        height: 67
+      spriteId: 4301b5deb976dbb49b28e2af0e64d028
+    - name: tikus_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 1
+        y: 5
+        width: 62
+        height: 67
+      spriteId: 9d8b12b79c1e80649a1666d542b66dd5
+    - name: tikus_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 1
+        y: 4
+        width: 62
+        height: 67
+      spriteId: 31370200677015644bbb7c430b0c8d87
+    - name: tikus_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 1
+        y: 5
+        width: 62
+        height: 67
+      spriteId: 9f98e554c0ebf734d86306a6d46a2ea3
+    - name: tikus_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 1
+        y: 6
+        width: 62
+        height: 67
+      spriteId: 83ab50232e87c364eb6cd6fa7b1f53de
+    - name: tikus_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 15
+        y: 7
+        width: 54
+        height: 72
+      spriteId: eb6fad4f368da264db5b9fd4ef65423d
+    - name: tikus_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 15
+        y: 6
+        width: 54
+        height: 72
+      spriteId: 2fd990adae4fc65458d01115523d30a4
+    - name: tikus_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 15
+        y: 7
+        width: 54
+        height: 71
+      spriteId: 7e082b9415e0ded418325ab5cb2b5423
+    - name: tikus_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 15
+        y: 8
+        width: 54
+        height: 71
+      spriteId: 9de2f856f5274a14484254227990c8f7
+    - name: tikus_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 15
+        y: 9
+        width: 54
+        height: 67
+      spriteId: 021ebe680dc32ee478fab31472599392
+    - name: tikus_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 15
+        y: 7
+        width: 54
+        height: 70
+      spriteId: fd73ae9b59008cb4e8326adeebacc991
+    - name: tikus_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 15
+        y: 6
+        width: 54
+        height: 73
+      spriteId: d6fe011e9ceb0be46b6b5b860e62baef
+    - name: tikus_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 15
+        y: 7
+        width: 54
+        height: 72
+      spriteId: 73caed9c055954643b1ed069f1472716
+    - name: tikus_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 15
+        y: 7
+        width: 54
+        height: 72
+      spriteId: bcc1d913baac5ac4a8d9aab0c49ca0a9
+    - name: tikus_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 15
+        y: 10
+        width: 54
+        height: 67
+      spriteId: ea4d8df9dc116d5459c591c86381b171
+    - name: tikus_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 59
+        y: 7
+        width: 54
+        height: 72
+      spriteId: cfe99a82ee1d4814c847a50a9e0a28ab
+    - name: tikus_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 59
+        y: 6
+        width: 54
+        height: 72
+      spriteId: 32a670d5ceedc8f47ac7757fd1f9dd07
+    - name: tikus_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 59
+        y: 7
+        width: 54
+        height: 71
+      spriteId: 9869242ed505e834c926446eca9206b3
+    - name: tikus_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 59
+        y: 8
+        width: 54
+        height: 71
+      spriteId: 0b23b59ee099a9e4b9faef5b26b336a0
+    - name: tikus_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 59
+        y: 9
+        width: 54
+        height: 67
+      spriteId: d8712132ce63b5d4c945b30517ee4c83
+    - name: tikus_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 59
+        y: 7
+        width: 54
+        height: 70
+      spriteId: f2c923030d2e2f9489891d6a9f160e9e
+    - name: tikus_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 59
+        y: 6
+        width: 54
+        height: 73
+      spriteId: fe4856c9a9578504099acb95a57fe644
+    - name: tikus_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 59
+        y: 7
+        width: 54
+        height: 72
+      spriteId: a3fa0bab8fb17ed4bb7b70a449e015c6
+    - name: tikus_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 59
+        y: 7
+        width: 54
+        height: 72
+      spriteId: ad0b977a8cdccbe44a55c1cc5f21fa2a
+    - name: tikus_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 59
+        y: 10
+        width: 54
+        height: 67
+      spriteId: 85b619929a846ce49869f7dee2e48450
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 128, y: 81}

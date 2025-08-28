@@ -19,6 +19,11 @@ public class DoorScript : MonoBehaviour, IInteractable
         // Teleport to next stage;
         Debug.Log("Im gonna be teleported into the next stage!");
         playerTransform.position = stagesScript.playerSpawnLocations[stagesScript.currentStageLevel].position;
+        if (stagesScript.currentStageLevel < 3)
+        {
+            Debug.Log($"Going to stage {stagesScript.currentStageLevel}");
+            stagesScript.currentStageLevel++;
+        }
     }
 }
  
