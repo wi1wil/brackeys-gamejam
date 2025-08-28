@@ -6,9 +6,11 @@ public class DoorScript : MonoBehaviour, IInteractable
 
     StagesScript stagesScript;
     PlayerInputScript playerInputScript;
+    ObesityScript obesityScript;
 
     void Start()
     {
+        obesityScript = FindAnyObjectByType<ObesityScript>();
         playerInputScript = FindAnyObjectByType<PlayerInputScript>();
         playerTransform = playerInputScript.transform;
         stagesScript = FindAnyObjectByType<StagesScript>();
@@ -22,6 +24,7 @@ public class DoorScript : MonoBehaviour, IInteractable
         if (stagesScript.currentStageLevel < 3)
         {
             Debug.Log($"Going to stage {stagesScript.currentStageLevel}");
+            obesityScript.ResetVariables();
             stagesScript.currentStageLevel++;
         }
     }

@@ -7,6 +7,7 @@ public class PlayerHealthScript : MonoBehaviour
 {
     public int maxHealth = 3;
     public int currentHealth = 0;
+    public bool isInvincible = false;
 
     public GameObject healthBar;
     public Material originalMaterial;
@@ -14,11 +15,13 @@ public class PlayerHealthScript : MonoBehaviour
 
     private GameOverScript gameOverScript;
     private SpriteRenderer spriteRenderer;
+    AbilitiesScript abilitiesScript;
 
     void Start()
     {
         healthBar = GameObject.Find("HealthBar");
         UpdateHealthBar();
+        abilitiesScript = FindAnyObjectByType<AbilitiesScript>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalMaterial = spriteRenderer.material;
         gameOverScript = FindAnyObjectByType<GameOverScript>();
@@ -39,6 +42,25 @@ public class PlayerHealthScript : MonoBehaviour
             Debug.Log("You died!");
             gameOverScript.gameOver();
         }
+        StartCoroutine(DamageFlash());
+    }
+
+    public void AddHealth()
+    {
+        if (currentHealth == 3)
+        {
+            Debug.Log("Max health");
+            return;
+        }
+
+        abilitiesScript.AbilityBCharge--;
+        currentHealth++;
+        StartCoroutine(DamageFlash());
+        // Add slurp juice sound here or anythin
+    }
+
+    public void FlashEffect()
+    {
         StartCoroutine(DamageFlash());
     }
 
@@ -67,6 +89,18 @@ public class PlayerHealthScript : MonoBehaviour
 
     IEnumerator DamageFlash()
     {
+        if (isInvincible)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                spriteRenderer.material = flashMaterial;
+                yield return new WaitForSeconds(0.25f);
+                spriteRenderer.material = originalMaterial;
+                yield return new WaitForSeconds(0.25f);
+            }
+        }
+
+        
         spriteRenderer.material = flashMaterial;
         yield return new WaitForSeconds(0.5f);
         spriteRenderer.material = originalMaterial;

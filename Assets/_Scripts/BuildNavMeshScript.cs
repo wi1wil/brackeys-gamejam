@@ -1,8 +1,6 @@
 using UnityEngine;
 using UnityEditor;
 using NavMeshPlus.Components;
-using UnityEngine.AI;
-using NavMeshPlus.Extensions;
 
 public class BuildNavMeshScript : MonoBehaviour
 {

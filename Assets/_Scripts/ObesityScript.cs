@@ -1,14 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class ObesityScript : MonoBehaviour
 {
     public int obesityType = 0;
-    public int eatenBiscuits = 0;
+    public int overEatenBiscuits = 0;
     public int totalBiscuits = 0;
     public int minimumPass = 5;
+
+    public bool isDiarrhea = false;
     public bool hasMinimum = false;
     public bool minimumReached = false;
     public GameObject doorPrefab;
@@ -25,11 +24,18 @@ public class ObesityScript : MonoBehaviour
         playerInputScript = FindObjectOfType<PlayerInputScript>();
     }
 
+    public void ResetVariables()
+    {
+        hasMinimum = false;
+        minimumReached = false;
+        totalBiscuits = 0;
+        overEatenBiscuits = 0;
+    }
+
     public void AddType()
     {
-        
         totalBiscuits++;
-        Debug.Log($"Eated: {eatenBiscuits}, Total: {totalBiscuits}");
+        Debug.Log($"Eated: {overEatenBiscuits}, Total: {totalBiscuits}");
         if (totalBiscuits >= minimumPass)
         {
             Debug.Log("Minimum Reached");
@@ -38,14 +44,13 @@ public class ObesityScript : MonoBehaviour
 
         if (hasMinimum)
         {
-            eatenBiscuits++;
+            overEatenBiscuits++;
         }
-        if (eatenBiscuits >= 2 && hasMinimum)
+        if (overEatenBiscuits >= 2 && hasMinimum && !isDiarrhea)
         {
             obesityType++;
-            Debug.Log($"Obesity Type: {obesityType}");
             CheckObesityType();
-            eatenBiscuits = 0;
+            overEatenBiscuits = 0;
         }
 
         if (hasMinimum && !minimumReached)
@@ -57,14 +62,29 @@ public class ObesityScript : MonoBehaviour
             int random = Random.Range(1, total + 1);
             Vector2 spawnPos = stagesScript.stages[current - 1].spawnPositions[random - 1].transform.position;
             Instantiate(doorPrefab, spawnPos, Quaternion.Euler(0f, 0f, 90f), spawnParent.transform);
+
+            // Spawn all
+            // int current = stagesScript.currentStageLevel;
+            // var stage = stagesScript.stages[current - 1];
+
+            // for (int i = 0; i < stage.totalSpawnLocation; i++)
+            // {
+            //     Vector2 spawnPos = stage.spawnPositions[i].transform.position;
+            //     Instantiate(doorPrefab, spawnPos, Quaternion.Euler(0f, 0f, 90f), spawnParent.transform);
+            // }
         }
     }
 
     public void DecreaseType()
     {
-        if (obesityType < 5)
+        if (obesityType > 0)
         {
+            Debug.Log("Decreasing Obesity Type");
             obesityType--;
+        }
+        else
+        {
+            
         }
     }
 
