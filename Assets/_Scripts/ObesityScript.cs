@@ -1,24 +1,30 @@
+using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
 
 public class ObesityScript : MonoBehaviour
 {
     public int obesityType = 0;
     public int overEatenBiscuits = 0;
-    public int totalBiscuits = 0;
-    public int minimumPass = 5;
+    public int eatenBiscuits = 0;
+    public int collectedBiscuits = 0;
+    public int[] minimumPass;
+    public int maxCollected;
 
     public bool isDiarrhea = false;
     public bool hasMinimum = false;
     public bool minimumReached = false;
+    public bool maxReached = false;
     public GameObject doorPrefab;
     public GameObject spawnParent;
 
     PlayerInputScript playerInputScript;
+    BiscuitSpawnerScript biscuitSpawnerScript;
     GameOverScript gameOverScript;
     StagesScript stagesScript;
 
     void Start()
     {
+        biscuitSpawnerScript = FindAnyObjectByType<BiscuitSpawnerScript>();
         stagesScript = FindObjectOfType<StagesScript>();
         gameOverScript = FindObjectOfType<GameOverScript>();
         playerInputScript = FindObjectOfType<PlayerInputScript>();
@@ -28,15 +34,15 @@ public class ObesityScript : MonoBehaviour
     {
         hasMinimum = false;
         minimumReached = false;
-        totalBiscuits = 0;
+        eatenBiscuits = 0;
         overEatenBiscuits = 0;
     }
 
-    public void AddType()
+    public void EatenBiscuits()
     {
-        totalBiscuits++;
-        Debug.Log($"Eated: {overEatenBiscuits}, Total: {totalBiscuits}");
-        if (totalBiscuits >= minimumPass)
+        eatenBiscuits++;
+        Debug.Log($"Eated: {overEatenBiscuits}, Total: {eatenBiscuits}");
+        if (eatenBiscuits >= minimumPass[stagesScript.currentStageLevel - 1])
         {
             Debug.Log("Minimum Reached");
             hasMinimum = true;
@@ -62,16 +68,23 @@ public class ObesityScript : MonoBehaviour
             int random = Random.Range(1, total + 1);
             Vector2 spawnPos = stagesScript.stages[current - 1].spawnPositions[random - 1].transform.position;
             Instantiate(doorPrefab, spawnPos, Quaternion.Euler(0f, 0f, 90f), spawnParent.transform);
+        }
+    }
 
-            // Spawn all
-            // int current = stagesScript.currentStageLevel;
-            // var stage = stagesScript.stages[current - 1];
+    public void CollectedBiscuits()
+    {
+        if (maxCollected == 0)
+            maxCollected = biscuitSpawnerScript.totalAmountToBeSpawned[stagesScript.currentStageLevel - 1] / 2;
 
-            // for (int i = 0; i < stage.totalSpawnLocation; i++)
-            // {
-            //     Vector2 spawnPos = stage.spawnPositions[i].transform.position;
-            //     Instantiate(doorPrefab, spawnPos, Quaternion.Euler(0f, 0f, 90f), spawnParent.transform);
-            // }
+        if (maxReached)
+            return;
+
+        collectedBiscuits++;
+        if (collectedBiscuits >= maxCollected)
+        {
+            maxReached = true;
+            Debug.Log("Pockets too full can only eat them now!");
+            return;
         }
     }
 
@@ -79,12 +92,12 @@ public class ObesityScript : MonoBehaviour
     {
         if (obesityType > 0)
         {
-            Debug.Log("Decreasing Obesity Type");
+            Debug.Log("Decreasing Obesity Type!");
             obesityType--;
         }
         else
         {
-            
+            Debug.Log("You have no obesity!");
         }
     }
 

@@ -1,3 +1,4 @@
+using System.ComponentModel.Design;
 using UnityEngine;
 
 public class DiarrheaPillsScript : MonoBehaviour, IInteractable
@@ -12,7 +13,15 @@ public class DiarrheaPillsScript : MonoBehaviour, IInteractable
     public void Interact()
     {
         Debug.Log("Eating a Pill");
-        obesityScript.DecreaseType();
-        Destroy(gameObject);
+        if (obesityScript.obesityType > 0)
+        {
+            Debug.Log("Decreasing your obesity");
+            obesityScript.DecreaseType();
+            Destroy(gameObject);
+        }
+        else
+        {
+            Debug.Log("You have no obesity, this won't work!");
+        }
     }
 }

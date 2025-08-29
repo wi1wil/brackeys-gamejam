@@ -15,7 +15,7 @@
                     "initialStateCheck": true
                 },
                 {
-                    "name": "Input",
+                    "name": "Interact",
                     "type": "Button",
                     "id": "c3dc5f99-ac99-47bb-84e1-1b53104f8b77",
                     "expectedControlType": "Button",
@@ -54,6 +54,24 @@
                     "name": "Diarrhea",
                     "type": "Button",
                     "id": "645cff7e-7422-4f15-a5a4-c665bebde8eb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Collect",
+                    "type": "Button",
+                    "id": "00cc2eae-7a6d-4fb3-b13f-f8000246e733",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Eat",
+                    "type": "Button",
+                    "id": "0451ef90-1ec7-4876-8c0c-fda064ad7eff",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -189,7 +207,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Input",
+                    "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -234,6 +252,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Diarrhea",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "83615f81-40cb-4dce-bb9b-4027c122e1bb",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Collect",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1b139eb5-91c2-433c-84e0-162eb9d771f5",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Eat",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

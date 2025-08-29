@@ -1,6 +1,7 @@
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
-public class BiscuitScript : MonoBehaviour, IInteractable
+public class BiscuitScript : MonoBehaviour, Biscuit
 {
     ScoringScript scoringScript;
     ObesityScript obesityScript;
@@ -10,14 +11,27 @@ public class BiscuitScript : MonoBehaviour, IInteractable
     void Start()
     {
         scoringScript = FindAnyObjectByType<ScoringScript>();
-        obesityScript = FindAnyObjectByType<ObesityScript>();  
+        obesityScript = FindAnyObjectByType<ObesityScript>();
     }
 
-    public void Interact()
+    public void Eat()
     {
-        Debug.Log($"Added {biscuitsValue}");
+        Debug.Log("Just ate this shit nigga");
         scoringScript.AddScore(biscuitsValue);
-        obesityScript.AddType();
+        obesityScript.EatenBiscuits();
+        Destroy(gameObject);
+    }
+
+    public void Collect()
+    {
+        if (obesityScript.maxReached)
+        {
+            Debug.Log("Pockets full chigga");
+            return;
+        }
+
+        Debug.Log("Just collected this shit nigga");
+        obesityScript.CollectedBiscuits();
         Destroy(gameObject);
     }
 }

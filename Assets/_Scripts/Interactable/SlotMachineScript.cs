@@ -1,7 +1,8 @@
 using System.Collections;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using Unity.PlasticSCM.Editor.WebApi;
 
 public class SlotMachineScript : MonoBehaviour, IInteractable
 {
@@ -11,14 +12,30 @@ public class SlotMachineScript : MonoBehaviour, IInteractable
     public GameObject gamblingSite;
     public Button gambleButton;
 
+    public Sprite preSpinSprite;
+    public Sprite afterSpinSprite;
+    public Image slotMachineImage;
+
+    public Transform pos1;
+    public Transform pos2;
+
     public bool isGambling = false;
     public bool isSpinning = false;
+    public bool nextPity = false;
+
+    public int[] costToGamble;
+    public TMP_Text costText;
 
     AbilitiesScript abilitiesScript;
+    ObesityScript obesityScript;
+    StagesScript stagesScript;
 
     void Start()
     {
+        stagesScript = FindAnyObjectByType<StagesScript>();
+        obesityScript = FindAnyObjectByType<ObesityScript>();
         abilitiesScript = FindAnyObjectByType<AbilitiesScript>();
+        UpdateText();
     }
 
     public void Interact()
@@ -32,33 +49,48 @@ public class SlotMachineScript : MonoBehaviour, IInteractable
                 gambleButton.onClick.RemoveAllListeners();
                 gambleButton.onClick.AddListener(() =>
                 {
-                    if (!isSpinning)
+                    if (!isSpinning && canGamble())
                     {
                         StartCoroutine(SlotMachine());
                     }
+                    else if (!canGamble())
+                    {
+                        Debug.Log("Not enough currency!");
+                    }
                     else
                     {
-                        Debug.Log("Still spinnin");
+                        Debug.Log("Still spinnin nigga");
                     }
                 });
             }
         }
-        else if(gamblingSite.activeSelf && !isSpinning)
+        else if (gamblingSite.activeSelf && !isSpinning)
         {
             isGambling = false;
             gamblingSite.SetActive(false);
         }
     }
 
+    public bool canGamble()
+    {
+        return obesityScript.collectedBiscuits >= costToGamble[stagesScript.currentStageLevel-1];
+    }
+
     IEnumerator SlotMachine()
     {
         isSpinning = true;
+        obesityScript.collectedBiscuits -= costToGamble[stagesScript.currentStageLevel-1];
+        slotMachineImage.sprite = afterSpinSprite;
+        gambleButton.transform.position = pos2.position;
+        UpdateText();
 
         Coroutine spinning = StartCoroutine(RandomSpin());
 
         yield return new WaitForSeconds(5f);
 
         StopCoroutine(spinning);
+        slotMachineImage.sprite = preSpinSprite;
+        gambleButton.transform.position = pos1.position;
         isSpinning = false;
 
         int[] results = new int[slots.Length];
@@ -84,6 +116,7 @@ public class SlotMachineScript : MonoBehaviour, IInteractable
                 if (abilitiesScript.AbilityACharge == 1)
                 {
                     Debug.Log("Already have an A ability charge!");
+                    break;
                 }
                 else
                 {
@@ -95,6 +128,7 @@ public class SlotMachineScript : MonoBehaviour, IInteractable
                 if (abilitiesScript.AbilityBCharge == 1)
                 {
                     Debug.Log("Already have a B ability charge!");
+                    break;
                 }
                 else
                 {
@@ -102,10 +136,11 @@ public class SlotMachineScript : MonoBehaviour, IInteractable
                 }
                 break;
 
-            case 3: 
+            case 3:
                 if (abilitiesScript.AbilityCCharge == 1)
                 {
                     Debug.Log("Already have a C ability charge!");
+                    break;
                 }
                 else
                 {
@@ -117,6 +152,7 @@ public class SlotMachineScript : MonoBehaviour, IInteractable
                 if (abilitiesScript.AbilityDCharge == 1)
                 {
                     Debug.Log("Already have a D ability charge!");
+                    break;
                 }
                 else
                 {
@@ -137,6 +173,11 @@ public class SlotMachineScript : MonoBehaviour, IInteractable
 
             yield return new WaitForSeconds(0.1f);
         }
+    }
+    
+    public void UpdateText()
+    {
+        costText.text = "Cost: " + costToGamble[stagesScript.currentStageLevel - 1] + " Cookies!";
     }
 } 
 
