@@ -229,17 +229,6 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "AddLife",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "404e016d-72bd-4301-9113-62525639503f",
-                    "path": "<Keyboard>/z",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
                     "action": "Invincibility",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -274,6 +263,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Eat",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "404e016d-72bd-4301-9113-62525639503f",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AddLife",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

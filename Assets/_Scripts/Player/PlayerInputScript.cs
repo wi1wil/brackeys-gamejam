@@ -10,17 +10,20 @@ public class PlayerInputScript : MonoBehaviour
 
     private Rigidbody2D rb;
     SlotMachineScript slotMachineScript;
-
+    DiarrheaPillsScript diarrheaPillsScript;
+    FemaleRatScript femaleRatScript;
 
     void Start()
     {
+        femaleRatScript = FindAnyObjectByType<FemaleRatScript>();
+        diarrheaPillsScript = FindAnyObjectByType<DiarrheaPillsScript>();
         slotMachineScript = FindAnyObjectByType<SlotMachineScript>();
         rb = GetComponent<Rigidbody2D>();
     }
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        if (slotMachineScript.isGambling)
+        if (slotMachineScript.isGambling && diarrheaPillsScript.confirmationPanelOpened && femaleRatScript.isConversationActivated)
         {
             movementInput = Vector2.zero;
             return;

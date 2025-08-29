@@ -2,10 +2,10 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using Unity.PlasticSCM.Editor.WebApi;
 
 public class SlotMachineScript : MonoBehaviour, IInteractable
 {
+    [Header("Slot Machine Setup")]
     public Sprite[] abilitiesSprites;
     public Image[] slots;
 
@@ -19,12 +19,17 @@ public class SlotMachineScript : MonoBehaviour, IInteractable
     public Transform pos1;
     public Transform pos2;
 
-    public bool isGambling = false;
-    public bool isSpinning = false;
-    public bool nextPity = false;
+    [Header("Pity System")]
+    public int amountBeforePity = 4;
+    public int pityCount = 0;
 
+    [Header("Costs")]
     public int[] costToGamble;
+    public TMP_Text[] pityText;
     public TMP_Text costText;
+
+    [HideInInspector] public bool isGambling = false;
+    [HideInInspector] public bool isSpinning = false;
 
     AbilitiesScript abilitiesScript;
     ObesityScript obesityScript;
@@ -35,7 +40,9 @@ public class SlotMachineScript : MonoBehaviour, IInteractable
         stagesScript = FindAnyObjectByType<StagesScript>();
         obesityScript = FindAnyObjectByType<ObesityScript>();
         abilitiesScript = FindAnyObjectByType<AbilitiesScript>();
+
         UpdateText();
+        ResetPity();
     }
 
     public void Interact()
@@ -44,22 +51,23 @@ public class SlotMachineScript : MonoBehaviour, IInteractable
         {
             isGambling = true;
             gamblingSite.SetActive(true);
+
             if (gambleButton != null)
             {
                 gambleButton.onClick.RemoveAllListeners();
                 gambleButton.onClick.AddListener(() =>
                 {
-                    if (!isSpinning && canGamble())
+                    if (!isSpinning && CanGamble())
                     {
                         StartCoroutine(SlotMachine());
                     }
-                    else if (!canGamble())
+                    else if (!CanGamble())
                     {
-                        Debug.Log("Not enough currency!");
+                        Debug.Log("Not enough biscuits!");
                     }
                     else
                     {
-                        Debug.Log("Still spinnin nigga");
+                        Debug.Log("Still spinning!");
                     }
                 });
             }
@@ -71,15 +79,16 @@ public class SlotMachineScript : MonoBehaviour, IInteractable
         }
     }
 
-    public bool canGamble()
+    public bool CanGamble()
     {
-        return obesityScript.collectedBiscuits >= costToGamble[stagesScript.currentStageLevel-1];
+        return obesityScript.collectedBiscuits >= costToGamble[stagesScript.currentStageLevel - 1];
     }
 
     IEnumerator SlotMachine()
     {
         isSpinning = true;
-        obesityScript.collectedBiscuits -= costToGamble[stagesScript.currentStageLevel-1];
+        obesityScript.collectedBiscuits -= costToGamble[stagesScript.currentStageLevel - 1];
+
         slotMachineImage.sprite = afterSpinSprite;
         gambleButton.transform.position = pos2.position;
         UpdateText();
@@ -87,11 +96,25 @@ public class SlotMachineScript : MonoBehaviour, IInteractable
         Coroutine spinning = StartCoroutine(RandomSpin());
 
         yield return new WaitForSeconds(5f);
-
         StopCoroutine(spinning);
-        slotMachineImage.sprite = preSpinSprite;
-        gambleButton.transform.position = pos1.position;
-        isSpinning = false;
+
+        if (pityCount > amountBeforePity)
+        {
+            Debug.Log("Pity gotten!");
+            int guaranteed = Random.Range(0, abilitiesSprites.Length);
+            for (int i = 0; i < slots.Length; i++)
+            {
+                slots[i].sprite = abilitiesSprites[guaranteed];
+                yield return new WaitForSeconds(0.3f);
+            }
+
+            Debug.Log(guaranteed);
+            abilitiesScript.AddAbilityCharge(guaranteed);
+            yield return StartCoroutine(ResetPity());
+            yield break;
+        }
+
+        yield return StartCoroutine(AddPity());
 
         int[] results = new int[slots.Length];
         for (int i = 0; i < slots.Length; i++)
@@ -104,64 +127,11 @@ public class SlotMachineScript : MonoBehaviour, IInteractable
         {
             int abilityIndex = results[0];
             Debug.Log("Won ability index: " + abilityIndex);
-            AddAbilityCharge(abilityIndex);
-        }
-    }
-
-    void AddAbilityCharge(int index)
-    {
-        switch (index)
-        {
-            case 1:
-                if (abilitiesScript.AbilityACharge == 1)
-                {
-                    Debug.Log("Already have an A ability charge!");
-                    break;
-                }
-                else
-                {
-                    abilitiesScript.AbilityACharge++;
-                }
-                break;
-
-            case 2:
-                if (abilitiesScript.AbilityBCharge == 1)
-                {
-                    Debug.Log("Already have a B ability charge!");
-                    break;
-                }
-                else
-                {
-                    abilitiesScript.AbilityBCharge++;
-                }
-                break;
-
-            case 3:
-                if (abilitiesScript.AbilityCCharge == 1)
-                {
-                    Debug.Log("Already have a C ability charge!");
-                    break;
-                }
-                else
-                {
-                    abilitiesScript.AbilityCCharge++;
-                }
-                break;
-
-            case 4:
-                if (abilitiesScript.AbilityDCharge == 1)
-                {
-                    Debug.Log("Already have a D ability charge!");
-                    break;
-                }
-                else
-                {
-                    abilitiesScript.AbilityDCharge++;
-                }
-                break;
+            abilitiesScript.AddAbilityCharge(abilityIndex);
+            yield return StartCoroutine(ResetPity());
         }
 
-        abilitiesScript.UpdateImages();
+        CleanupSpin();
     }
 
     IEnumerator RandomSpin()
@@ -174,10 +144,41 @@ public class SlotMachineScript : MonoBehaviour, IInteractable
             yield return new WaitForSeconds(0.1f);
         }
     }
-    
+
     public void UpdateText()
     {
         costText.text = "Cost: " + costToGamble[stagesScript.currentStageLevel - 1] + " Cookies!";
     }
-} 
 
+    IEnumerator ResetPity()
+    {
+        Debug.Log("Resetting Pity");
+        foreach (var txt in pityText)
+        { 
+            txt.text = "0";
+            yield return new WaitForSeconds(0.2f);
+        }
+        pityCount = 0;
+
+        CleanupSpin();
+        yield break;
+    }
+
+    IEnumerator AddPity()
+    {
+        Debug.Log("Adding Pity");
+        if (pityCount < pityText.Length)
+        {
+            pityText[pityCount].text = "7";
+        }
+        pityCount++;
+        yield break;
+    }
+
+    void CleanupSpin()
+    {
+        slotMachineImage.sprite = preSpinSprite;
+        gambleButton.transform.position = pos1.position;
+        isSpinning = false;
+    }
+}

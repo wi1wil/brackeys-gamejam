@@ -6,6 +6,7 @@ using System.Collections;
 public class PlayerHealthScript : MonoBehaviour
 {
     public int maxHealth = 3;
+    public bool isMaxHealth = false;
     public int currentHealth = 0;
     public bool isInvincible = false;
 
@@ -52,8 +53,6 @@ public class PlayerHealthScript : MonoBehaviour
             Debug.Log("Max health");
             return;
         }
-
-        abilitiesScript.AbilityBCharge--;
         currentHealth++;
         StartCoroutine(DamageFlash());
         // Add slurp juice sound here or anythin
@@ -66,6 +65,8 @@ public class PlayerHealthScript : MonoBehaviour
 
     public void UpdateHealthBar()
     {
+        if (currentHealth == 3) isMaxHealth = true;
+        
         List<Image> children = new List<Image>();
         foreach (Transform child in healthBar.transform)
         {

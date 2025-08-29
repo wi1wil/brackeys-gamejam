@@ -1,5 +1,5 @@
-using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine;
+using TMPro;
 
 public class ObesityScript : MonoBehaviour
 {
@@ -7,15 +7,19 @@ public class ObesityScript : MonoBehaviour
     public int overEatenBiscuits = 0;
     public int eatenBiscuits = 0;
     public int collectedBiscuits = 0;
-    public int[] minimumPass;
     public int maxCollected;
+    public int[] minimumPass;
 
     public bool isDiarrhea = false;
     public bool hasMinimum = false;
     public bool minimumReached = false;
     public bool maxReached = false;
+
     public GameObject doorPrefab;
     public GameObject spawnParent;
+    public TMP_Text collectedText;
+    public TMP_Text eatenText;
+    public TMP_Text obesityTypeText;
 
     PlayerInputScript playerInputScript;
     BiscuitSpawnerScript biscuitSpawnerScript;
@@ -36,6 +40,18 @@ public class ObesityScript : MonoBehaviour
         minimumReached = false;
         eatenBiscuits = 0;
         overEatenBiscuits = 0;
+    }
+
+    void Update()
+    {
+        UpdateText();
+    }
+
+    public void UpdateText()
+    {
+        collectedText.text = $"Collected: {collectedBiscuits}";
+        eatenText.text = $"Eaten: {eatenBiscuits}";
+        obesityTypeText.text = $"Obesity Type: {obesityType}";
     }
 
     public void EatenBiscuits()
