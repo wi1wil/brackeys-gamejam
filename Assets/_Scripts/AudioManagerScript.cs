@@ -1,16 +1,45 @@
 using UnityEngine;
 
+
 public class AudioManagerScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [Header("Audio Sources")]
+    [SerializeField] AudioSource bgmSource;
+    [SerializeField] AudioSource sfxSource;
+
+    [Header("Audio Clips")]
+    public AudioClip backgroundMusic;
+    public AudioClip casinoAmbience;
+    public AudioClip stagesAmbience;
+
+    public AudioClip slotRollingSFX;
+    public AudioClip slotWinSFX;
+    public AudioClip slotLoseSFX;
+    public AudioClip gameOverSFX;
+    public AudioClip headChefSFX;
+    public AudioClip chefSFX;
+    public AudioClip janitorSFX;
+    public AudioClip WalkSFX;
+
+    [Header("Not Filled")]
+    public AudioClip EatSFX;
+    public AudioClip CollectSFX;
+    public AudioClip PillSFX;
+    public AudioClip TakeDamageSFX;
+    public AudioClip ActivateAbilitySFX;
+    public AudioClip HideSFX;
+    public AudioClip PoisonedSFX;
+    public AudioClip OpenMenuSFX;
+    
+
+    private void Start()
     {
-        
+        bgmSource.clip = backgroundMusic;
+        bgmSource.Play();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void PlaySFX(AudioClip clip)
     {
-        
+        sfxSource.PlayOneShot(clip);
     }
 }

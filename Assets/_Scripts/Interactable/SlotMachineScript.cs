@@ -31,9 +31,15 @@ public class SlotMachineScript : MonoBehaviour, IInteractable
     [HideInInspector] public bool isGambling = false;
     [HideInInspector] public bool isSpinning = false;
 
+    AudioManagerScript audioManagerScript;
     AbilitiesScript abilitiesScript;
     ObesityScript obesityScript;
     StagesScript stagesScript;
+
+    void Awake()
+    {
+        audioManagerScript = FindAnyObjectByType<AudioManagerScript>();
+    }
 
     void Start()
     {
@@ -88,7 +94,6 @@ public class SlotMachineScript : MonoBehaviour, IInteractable
     {
         isSpinning = true;
         obesityScript.collectedBiscuits -= costToGamble[stagesScript.currentStageLevel - 1];
-
         slotMachineImage.sprite = afterSpinSprite;
         gambleButton.transform.position = pos2.position;
         UpdateText();
@@ -109,6 +114,7 @@ public class SlotMachineScript : MonoBehaviour, IInteractable
             }
 
             Debug.Log(guaranteed);
+            audioManagerScript.PlaySFX(audioManagerScript.slotWinSFX);
             abilitiesScript.AddAbilityCharge(guaranteed);
             yield return StartCoroutine(ResetPity());
             yield break;
@@ -127,6 +133,7 @@ public class SlotMachineScript : MonoBehaviour, IInteractable
         {
             int abilityIndex = results[0];
             Debug.Log("Won ability index: " + abilityIndex);
+            audioManagerScript.PlaySFX(audioManagerScript.slotWinSFX);
             abilitiesScript.AddAbilityCharge(abilityIndex);
             yield return StartCoroutine(ResetPity());
         }
@@ -136,6 +143,7 @@ public class SlotMachineScript : MonoBehaviour, IInteractable
 
     IEnumerator RandomSpin()
     {
+        audioManagerScript.PlaySFX(audioManagerScript.slotRollingSFX);
         while (true)
         {
             for (int i = 0; i < slots.Length; i++)

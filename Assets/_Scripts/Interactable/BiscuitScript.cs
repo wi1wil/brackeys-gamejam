@@ -16,7 +16,6 @@ public class BiscuitScript : MonoBehaviour, Biscuit
     public void Eat()
     {
         Debug.Log("Just ate this shit nigga");
-        scoringScript.AddScore(biscuitsValue);
         obesityScript.EatenBiscuits();
         Destroy(gameObject);
     }

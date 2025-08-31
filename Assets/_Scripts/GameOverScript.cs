@@ -1,16 +1,18 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
 public class GameOverScript : MonoBehaviour
 {
     public bool hasRevive = false;
+    public bool isAlive = true;
 
     PlayerHealthScript playerHealthScript;
     PlayerInputScript playerInputScript;
+    PlayerSaveScript playerSaveScript;
 
     void Start()
     {
+        playerSaveScript = FindAnyObjectByType<PlayerSaveScript>();
         playerInputScript = FindAnyObjectByType<PlayerInputScript>();
         playerHealthScript = FindAnyObjectByType<PlayerHealthScript>();
     }
@@ -22,8 +24,17 @@ public class GameOverScript : MonoBehaviour
             Debug.Log("The guardian angle has revived and saved you!");
             playerHealthScript.AddHealth();
             StartCoroutine(invincibilityRevive());
+            hasRevive = false;
+            return;
         }
+        playerSaveScript.SaveData();
         Debug.Log("You died!");
+        isAlive = false;
+    }
+
+    public void playerWon()
+    {
+        Debug.Log("Player won!");
     }
 
     IEnumerator invincibilityRevive()

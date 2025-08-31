@@ -7,11 +7,15 @@ public class DoorScript : MonoBehaviour, IInteractable
     StagesScript stagesScript;
     PlayerInputScript playerInputScript;
     ObesityScript obesityScript;
+    FemaleRatScript femaleRatScript;
+    GameOverScript gameOverScript;
 
     void Start()
     {
+        femaleRatScript = FindAnyObjectByType<FemaleRatScript>();
         obesityScript = FindAnyObjectByType<ObesityScript>();
         playerInputScript = FindAnyObjectByType<PlayerInputScript>();
+        gameOverScript = FindAnyObjectByType<GameOverScript>();
         playerTransform = playerInputScript.transform;
         stagesScript = FindAnyObjectByType<StagesScript>();
     }
@@ -24,8 +28,15 @@ public class DoorScript : MonoBehaviour, IInteractable
         if (stagesScript.currentStageLevel < 3)
         {
             Debug.Log($"Going to stage {stagesScript.currentStageLevel}");
+            femaleRatScript.hasAlreadyBought = false;
             obesityScript.ResetVariables();
             stagesScript.currentStageLevel++;
+        }
+        else if (stagesScript.currentStageLevel == 3)
+        {
+            stagesScript.currentStageLevel++;
+            Debug.Log("Player has won!");
+            gameOverScript.playerWon();
         }
     }
 }

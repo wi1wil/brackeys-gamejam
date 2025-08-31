@@ -1,0 +1,193 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: Idle
+    m_Hash: 1008081451
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: tikus_Frame_0
+      m_Hash: 1068933765
+      m_Sprite: {fileID: 8356700059371760617, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8356700059371760617, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: WalkUp
+    m_Hash: 648049478
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: tikus_Frame_25
+      m_Hash: 736790561
+      m_Sprite: {fileID: -1110673667590512040, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1110673667590512040, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    - m_Name: tikus_Frame_26
+      m_Hash: 853793179
+      m_Sprite: {fileID: 1526344016058866688, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1526344016058866688, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    - m_Name: tikus_Frame_27
+      m_Hash: 98887949
+      m_Sprite: {fileID: 9017206721706776141, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 9017206721706776141, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    - m_Name: tikus_Frame_28
+      m_Hash: 358347932
+      m_Sprite: {fileID: -1466860973364115776, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1466860973364115776, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  - m_Name: WalkLeft
+    m_Hash: 1036352720
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: tikus_Frame_1
+      m_Hash: 145854995
+      m_Sprite: {fileID: 6442667352040113659, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 6442667352040113659, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    - m_Name: tikus_Frame_2
+      m_Hash: 297321385
+      m_Sprite: {fileID: 8672200634034205049, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8672200634034205049, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    - m_Name: tikus_Frame_3
+      m_Hash: 650113855
+      m_Sprite: {fileID: 7878527668561344600, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 7878527668561344600, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    - m_Name: tikus_Frame_4
+      m_Hash: 953902748
+      m_Sprite: {fileID: 6542927846603038210, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 6542927846603038210, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    - m_Name: tikus_Frame_5
+      m_Hash: 266098186
+      m_Sprite: {fileID: -1186310278159735932, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1186310278159735932, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    - m_Name: tikus_Frame_6
+      m_Hash: 383059888
+      m_Sprite: {fileID: -392055292700107648, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -392055292700107648, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    - m_Name: tikus_Frame_7
+      m_Hash: 567424806
+      m_Sprite: {fileID: -7916710868565824197, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -7916710868565824197, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    - m_Name: tikus_Frame_8
+      m_Hash: 829237943
+      m_Sprite: {fileID: 4861614098393477690, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4861614098393477690, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    - m_Name: tikus_Frame_9
+      m_Hash: 107616801
+      m_Sprite: {fileID: 3866879369869434536, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 3866879369869434536, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    - m_Name: tikus_Frame_10
+      m_Hash: 816656237
+      m_Sprite: {fileID: 5986749041363662253, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 5986749041363662253, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 10
+  - m_Name: WalkRight
+    m_Hash: 829942833
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: tikus_Frame_11
+      m_Hash: 128589819
+      m_Sprite: {fileID: 4649218313444885136, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 4649218313444885136, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    - m_Name: tikus_Frame_12
+      m_Hash: 514018881
+      m_Sprite: {fileID: 1951040625464294759, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1951040625464294759, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    - m_Name: tikus_Frame_13
+      m_Hash: 698646231
+      m_Sprite: {fileID: -7625744789783651114, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -7625744789783651114, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    - m_Name: tikus_Frame_14
+      m_Hash: 935390068
+      m_Sprite: {fileID: 6545120856509111878, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 6545120856509111878, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    - m_Name: tikus_Frame_15
+      m_Hash: 13097954
+      m_Sprite: {fileID: -2256395609470376331, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2256395609470376331, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    - m_Name: tikus_Frame_16
+      m_Hash: 432966232
+      m_Sprite: {fileID: -3560047497168717882, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3560047497168717882, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    - m_Name: tikus_Frame_17
+      m_Hash: 784972494
+      m_Sprite: {fileID: 5578029700963589797, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 5578029700963589797, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    - m_Name: tikus_Frame_18
+      m_Hash: 1047963487
+      m_Sprite: {fileID: 8334419421093311647, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 8334419421093311647, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    - m_Name: tikus_Frame_19
+      m_Hash: 158439369
+      m_Sprite: {fileID: 230413145265424948, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 230413145265424948, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    - m_Name: tikus_Frame_20
+      m_Hash: 461405358
+      m_Sprite: {fileID: -873037329960119281, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -873037329960119281, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 10
+  - m_Name: WalkDown
+    m_Hash: 459082627
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: tikus_Frame_21
+      m_Hash: 747064376
+      m_Sprite: {fileID: -4435685193924433351, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4435685193924433351, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    - m_Name: tikus_Frame_22
+      m_Hash: 898506114
+      m_Sprite: {fileID: 2577460913238673157, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 2577460913238673157, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    - m_Name: tikus_Frame_23
+      m_Hash: 42544404
+      m_Sprite: {fileID: -7400152344810729220, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -7400152344810729220, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    - m_Name: tikus_Frame_24
+      m_Hash: 485341367
+      m_Sprite: {fileID: 26954715310124332, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 26954715310124332, guid: 1330619ee8779784aa5dfeb8d800e379, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  m_PrimaryLibraryGUID: 
+  m_ModificationHash: 638922375806307758
+  m_Version: 1

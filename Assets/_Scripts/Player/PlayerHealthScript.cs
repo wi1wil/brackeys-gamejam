@@ -16,6 +16,7 @@ public class PlayerHealthScript : MonoBehaviour
 
     private GameOverScript gameOverScript;
     private SpriteRenderer spriteRenderer;
+    
     AbilitiesScript abilitiesScript;
 
     void Start()
@@ -79,12 +80,12 @@ public class PlayerHealthScript : MonoBehaviour
 
         for (int i = 0; i < maxHealth; i++)
         {
-            children[i].fillCenter = false;
+            children[i].gameObject.SetActive(false);
         }
 
         for (int i = 0; i < currentHealth; i++)
         {
-            children[i].fillCenter = true;
+            children[i].gameObject.SetActive(true);
         }
     }
 

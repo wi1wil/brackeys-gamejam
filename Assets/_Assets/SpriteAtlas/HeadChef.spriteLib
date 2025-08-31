@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: Idle
+    m_Hash: 1008081451
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: KOKI_1_Frame_0
+      m_Hash: 229230777
+      m_Sprite: {fileID: 3503710957548162523, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 3503710957548162523, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 1
+  - m_Name: WalkUp
+    m_Hash: 648049478
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: KOKI_1_Frame_5
+      m_Hash: 1036205110
+      m_Sprite: {fileID: -2245294578640460605, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2245294578640460605, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+    - m_Name: KOKI_1_Frame_6
+      m_Hash: 617246092
+      m_Sprite: {fileID: 3980021894657235146, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 3980021894657235146, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+    - m_Name: KOKI_1_Frame_7
+      m_Hash: 332225818
+      m_Sprite: {fileID: -6238118483689421794, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6238118483689421794, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+    - m_Name: KOKI_1_Frame_8
+      m_Hash: 57819275
+      m_Sprite: {fileID: -8701956274723888959, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -8701956274723888959, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  - m_Name: WalkLeft
+    m_Hash: 1036352720
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: KOKI_1_Frame_9
+      m_Hash: 880111645
+      m_Sprite: {fileID: -2856054546719963826, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2856054546719963826, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+    - m_Name: KOKI_1_Frame_10
+      m_Hash: 527453312
+      m_Sprite: {fileID: 9008921518669022620, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 9008921518669022620, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+    - m_Name: KOKI_1_Frame_11
+      m_Hash: 678919190
+      m_Sprite: {fileID: -4173898290183142009, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4173898290183142009, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+    - m_Name: KOKI_1_Frame_12
+      m_Hash: 830352812
+      m_Sprite: {fileID: -7211330063982723609, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -7211330063982723609, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  - m_Name: WalkRight
+    m_Hash: 829942833
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: KOKI_1_Frame_13
+      m_Hash: 108600634
+      m_Sprite: {fileID: 6728380003044939613, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 6728380003044939613, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+    - m_Name: KOKI_1_Frame_14
+      m_Hash: 404588697
+      m_Sprite: {fileID: 5274187419284936279, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 5274187419284936279, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+    - m_Name: KOKI_1_Frame_15
+      m_Hash: 790280207
+      m_Sprite: {fileID: 6834532529776581934, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 6834532529776581934, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+    - m_Name: KOKI_1_Frame_16
+      m_Hash: 907274677
+      m_Sprite: {fileID: -4011531805227721920, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -4011531805227721920, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  - m_Name: WalkDown
+    m_Hash: 459082627
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: KOKI_1_Frame_1
+      m_Hash: 984545327
+      m_Sprite: {fileID: -7108584051405262513, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -7108584051405262513, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+    - m_Name: KOKI_1_Frame_2
+      m_Hash: 598190485
+      m_Sprite: {fileID: -6164684296477209131, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -6164684296477209131, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+    - m_Name: KOKI_1_Frame_3
+      m_Hash: 346069251
+      m_Sprite: {fileID: 7358364134927604898, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 7358364134927604898, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+    - m_Name: KOKI_1_Frame_4
+      m_Hash: 180620448
+      m_Sprite: {fileID: 1395525002699501043, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1395525002699501043, guid: 7ed424345d0b4ab4bac424f1674b65b7, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  m_PrimaryLibraryGUID: 
+  m_ModificationHash: 638922380040511915
+  m_Version: 1

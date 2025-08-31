@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class FemaleRatScript : MonoBehaviour, IInteractable
 {
     public bool isConversationActivated = false;
+    public bool hasAlreadyBought = false;
     public GameObject femaleConversationPanel;
     public TMP_Text femaleConversationText;
     public Button yesButton;
@@ -36,7 +37,7 @@ public class FemaleRatScript : MonoBehaviour, IInteractable
     public void boughtRevive()
     {
         // if already have revive, return and cannot buy anymore
-        if (gameOverScript.hasRevive)
+        if (gameOverScript.hasRevive || hasAlreadyBought)
         {
             Debug.Log("already has a revive!");
             closePanel();
@@ -51,6 +52,7 @@ public class FemaleRatScript : MonoBehaviour, IInteractable
 
         // else take money from the players
         Debug.Log("Just bought a revive");
+        hasAlreadyBought = true;
         gameOverScript.hasRevive = true;
         obesityScript.collectedBiscuits -= costToBuyRevive[stagesScript.currentStageLevel - 1];
         closePanel();

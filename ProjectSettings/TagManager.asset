@@ -11,6 +11,7 @@ TagManager:
   - Stage1
   - Stage2
   - Stage3
+  - SmallSpace
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Water
   - UI
   - Obstacle
-  - 
+  - Biscuit
   - 
   - 
   - 

@@ -15,13 +15,9 @@ public class BiscuitSpawnerScript : MonoBehaviour
         stagesScript = FindAnyObjectByType<StagesScript>();
     }
 
-    void Update()
-    {
-        callSpawnCookies();
-    }
-
     public void callSpawnCookies()
     {
+        spawnedCookies = 0;
         StartCoroutine(spawnCookies());
     }
 

@@ -57,7 +57,6 @@ public class EnemyChaseScript : MonoBehaviour
 
         if (gameObject.CompareTag("Patrol"))
         {
-            patrolPoints = GameObject.Find("PatrolPoints");
             isPatrolling = true;
             updatePoints();
             agent.SetDestination(points[0].position);

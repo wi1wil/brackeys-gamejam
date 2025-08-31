@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class ObesityScript : MonoBehaviour
 {
@@ -9,7 +10,8 @@ public class ObesityScript : MonoBehaviour
     public int collectedBiscuits = 0;
     public int maxCollected;
     public int[] minimumPass;
-
+    public Image[] obesityBarImage;
+    
     public bool isDiarrhea = false;
     public bool hasMinimum = false;
     public bool minimumReached = false;
@@ -19,7 +21,6 @@ public class ObesityScript : MonoBehaviour
     public GameObject spawnParent;
     public TMP_Text collectedText;
     public TMP_Text eatenText;
-    public TMP_Text obesityTypeText;
 
     PlayerInputScript playerInputScript;
     BiscuitSpawnerScript biscuitSpawnerScript;
@@ -49,9 +50,12 @@ public class ObesityScript : MonoBehaviour
 
     public void UpdateText()
     {
-        collectedText.text = $"Collected: {collectedBiscuits}";
-        eatenText.text = $"Eaten: {eatenBiscuits}";
-        obesityTypeText.text = $"Obesity Type: {obesityType}";
+        collectedText.text = $"{collectedBiscuits}";
+        eatenText.text = $"{eatenBiscuits}";
+        for (int i = 0; i < obesityBarImage.Length; i++)
+        {
+            obesityBarImage[i].fillCenter = (i < obesityType);
+        }
     }
 
     public void EatenBiscuits()
@@ -90,7 +94,7 @@ public class ObesityScript : MonoBehaviour
     public void CollectedBiscuits()
     {
         if (maxCollected == 0)
-            maxCollected = biscuitSpawnerScript.totalAmountToBeSpawned[stagesScript.currentStageLevel - 1] / 2;
+            maxCollected = (biscuitSpawnerScript.totalAmountToBeSpawned[stagesScript.currentStageLevel - 1] - minimumPass[stagesScript.currentStageLevel-1]) / 2;
 
         if (maxReached)
             return;

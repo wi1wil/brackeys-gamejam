@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4098235251754257576}
   - component: {fileID: 5833262560222480589}
   - component: {fileID: 4171918913478035261}
-  - component: {fileID: 3053697983298206787}
   - component: {fileID: 7867962094497775906}
   - component: {fileID: 1827226020279175662}
   - component: {fileID: 1054043486940047440}
@@ -77,9 +76,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 1, g: 0.06132078, b: 0.06132078, a: 1}
+  m_SortingOrder: -4
+  m_Sprite: {fileID: -8254855586494837932, guid: 510b995c79f58984792b8f9aacd42a76, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -110,41 +109,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!58 &3053697983298206787
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8220212584119806517}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.084397584}
-  serializedVersion: 2
-  m_Radius: 0.37306425
 --- !u!50 &7867962094497775906
 Rigidbody2D:
   serializedVersion: 4
@@ -181,7 +145,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 8220212584119806517}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 0.71
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -190,8 +154,8 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.08
-  m_BaseOffset: 0.54
+  m_Height: 4
+  m_BaseOffset: 2.04
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &1054043486940047440
@@ -210,12 +174,16 @@ MonoBehaviour:
   lineOfSightRange: 10
   proximityRange: 10
   patrolRange: 12.5
+  attackRange: 2.5
   count: 0
   total: 0
+  attackCooldown: 5
   isLOS: 0
   isProximity: 0
   isPatrol: 0
+  isPatrolling: 0
   isDroppingPoison: 0
+  isAttacking: 0
   reachedMax: 0
   reachedMin: 0
   target: {fileID: 0}
@@ -223,3 +191,4 @@ MonoBehaviour:
   poisonParent: {fileID: 0}
   patrolPoints: {fileID: 0}
   points: []
+  spawnPos: {x: 0, y: 0}
