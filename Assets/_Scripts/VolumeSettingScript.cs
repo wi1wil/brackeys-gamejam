@@ -17,8 +17,11 @@ public class VolumeSettingScript : MonoBehaviour
 
     public GameObject menuPanel;
 
+    AudioManagerScript audioManagerScript;
+
     void OnEnable()
     {
+        audioManagerScript = FindAnyObjectByType<AudioManagerScript>();
         masterSlider.value = PlayerPrefs.GetFloat("masterVolume", 0.5f);
         musicSlider.value = PlayerPrefs.GetFloat("musicVolume", 0.5f);
         sfxSlider.value = PlayerPrefs.GetFloat("sfxVolume", 0.5f);
@@ -33,7 +36,7 @@ public class VolumeSettingScript : MonoBehaviour
     }
 
     public void openMenu()
-    { 
+    {
         if (menuPanel.activeSelf)
         {
             menuPanel.SetActive(false);
@@ -42,6 +45,7 @@ public class VolumeSettingScript : MonoBehaviour
         {
             menuPanel.SetActive(true);
         }
+        audioManagerScript.PlaySFX(audioManagerScript.OpenMenuSFX);
     }
 
 

@@ -17,9 +17,11 @@ public class InteractableDetectorScript : MonoBehaviour
     public bool isCollecting = false;
 
     PlayerInputScript playerInputScript;
+    AudioManagerScript audioManagerScript;
 
     void Start()
     {
+        audioManagerScript = FindAnyObjectByType<AudioManagerScript>();
         playerInputScript = FindObjectOfType<PlayerInputScript>();
     }
 
@@ -39,10 +41,12 @@ public class InteractableDetectorScript : MonoBehaviour
                 if (isCollecting)
                 {
                     BiscuitInRange.Collect();
+                    audioManagerScript.PlaySFX(audioManagerScript.CollectSFX);
                 }
                 else if (isEating)
                 {
                     BiscuitInRange.Eat();
+                    audioManagerScript.PlaySFX(audioManagerScript.EatSFX);
                 }
                 ResetHold();
             }

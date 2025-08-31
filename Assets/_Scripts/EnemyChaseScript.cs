@@ -33,6 +33,7 @@ public class EnemyChaseScript : MonoBehaviour
     public Transform[] points;
     public Vector2 spawnPos;
 
+    AudioManagerScript audioManagerScript;
     PlayerHealthScript playerHealthScript;
     PlayerInputScript playerInputScript;
     StagesScript stagesScript;
@@ -43,6 +44,7 @@ public class EnemyChaseScript : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        audioManagerScript = FindAnyObjectByType<AudioManagerScript>();
         playerInputScript = FindAnyObjectByType<PlayerInputScript>();
         playerHealthScript = FindAnyObjectByType<PlayerHealthScript>();
         stagesScript = FindAnyObjectByType<StagesScript>();
@@ -114,35 +116,35 @@ public class EnemyChaseScript : MonoBehaviour
         }
     }
 
-    void OnDrawGizmos()
-    {
-        if (isLOS)
-        {
-            Gizmos.color = Color.black;
-            Gizmos.DrawWireSphere(transform.position, lineOfSightRange);
-        }
+    // void OnDrawGizmos()
+    // {
+    //     if (isLOS)
+    //     {
+    //         Gizmos.color = Color.black;
+    //         Gizmos.DrawWireSphere(transform.position, lineOfSightRange);
+    //     }
 
-        if (isProximity)
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(transform.position, proximityRange);
-        }
+    //     if (isProximity)
+    //     {
+    //         Gizmos.color = Color.red;
+    //         Gizmos.DrawWireSphere(transform.position, proximityRange);
+    //     }
 
-        if (isPatrol)
-        {
-            Gizmos.color = Color.green;
-            Gizmos.DrawWireSphere(transform.position, patrolRange);
-        }
+    //     if (isPatrol)
+    //     {
+    //         Gizmos.color = Color.green;
+    //         Gizmos.DrawWireSphere(transform.position, patrolRange);
+    //     }
 
-        if (target != null)
-        {
-            Vector3 origin = transform.position;
-            bool clear = LineOfSight(target);
+    //     if (target != null)
+    //     {
+    //         Vector3 origin = transform.position;
+    //         bool clear = LineOfSight(target);
 
-            Gizmos.color = clear ? Color.green : Color.yellow;
-            Gizmos.DrawLine(origin, target.position);
-        }
-    }
+    //         Gizmos.color = clear ? Color.green : Color.yellow;
+    //         Gizmos.DrawLine(origin, target.position);
+    //     }
+    // }
 
     void enemyLOS()
     {

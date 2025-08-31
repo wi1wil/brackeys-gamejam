@@ -25,12 +25,14 @@ public class GameOverScript : MonoBehaviour
     ResetAllScript resetAllScript;
     ObesityScript obesityScript;
     SurvivalTimeScript survivalTimeScript;
+    AudioManagerScript audioManagerScript;
 
     public GameObject startMenuPanel;
     public GameObject gameOverPanel;
 
     void Start()
     {
+        audioManagerScript = FindAnyObjectByType<AudioManagerScript>();
         resetAllScript = FindAnyObjectByType<ResetAllScript>();
         playerSaveScript = FindAnyObjectByType<PlayerSaveScript>();
         playerInputScript = FindAnyObjectByType<PlayerInputScript>();
@@ -55,6 +57,7 @@ public class GameOverScript : MonoBehaviour
             return;
         }
 
+        audioManagerScript.PlaySFX(audioManagerScript.gameOverSFX);
         isAlive = false;
         Time.timeScale = 0;
 

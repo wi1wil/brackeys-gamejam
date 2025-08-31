@@ -137,7 +137,7 @@ public class SlotMachineScript : MonoBehaviour, IInteractable
             abilitiesScript.AddAbilityCharge(abilityIndex);
             yield return StartCoroutine(ResetPity());
         }
-
+        audioManagerScript.PlaySFX(audioManagerScript.slotLoseSFX);
         CleanupSpin();
     }
 

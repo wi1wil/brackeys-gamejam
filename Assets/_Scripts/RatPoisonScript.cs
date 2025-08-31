@@ -5,9 +5,11 @@ public class RatPoisonScript : MonoBehaviour
     PlayerInputScript player;
 
     EnemyChaseScript enemyChaseScript;
+    AudioManagerScript audioManagerScript;
 
     private void Start()
     {
+        audioManagerScript = FindAnyObjectByType<AudioManagerScript>();
         enemyChaseScript = FindAnyObjectByType<EnemyChaseScript>();
     }
 
@@ -17,6 +19,7 @@ public class RatPoisonScript : MonoBehaviour
         {
             player = collision.GetComponent<PlayerInputScript>();
             enemyChaseScript.callGetPoisoned();
+            audioManagerScript.PlaySFX(audioManagerScript.PoisonedSFX);
             Destroy(gameObject);
         }
     }

@@ -15,10 +15,12 @@ public class AudioManagerScript : MonoBehaviour
     public AudioClip slotRollingSFX;
     public AudioClip slotWinSFX;
     public AudioClip slotLoseSFX;
+    
     public AudioClip gameOverSFX;
     public AudioClip headChefSFX;
     public AudioClip chefSFX;
     public AudioClip janitorSFX;
+    
     public AudioClip WalkSFX;
 
     [Header("Not Filled")]

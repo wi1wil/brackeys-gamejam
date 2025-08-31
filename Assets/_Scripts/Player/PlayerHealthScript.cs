@@ -18,11 +18,13 @@ public class PlayerHealthScript : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     
     AbilitiesScript abilitiesScript;
+    AudioManagerScript audioManagerScript;
 
     void Start()
     {
         healthBar = GameObject.Find("HealthBar");
         UpdateHealthBar();
+        audioManagerScript = FindAnyObjectByType<AudioManagerScript>();
         abilitiesScript = FindAnyObjectByType<AbilitiesScript>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalMaterial = spriteRenderer.material;
@@ -46,6 +48,7 @@ public class PlayerHealthScript : MonoBehaviour
             if (gameOverScript != null)
                 gameOverScript.gameOver();
         }
+        audioManagerScript.PlaySFX(audioManagerScript.TakeDamageSFX);
         StartCoroutine(DamageFlash());
     }
 

@@ -15,12 +15,14 @@ public class PlayerInputScript : MonoBehaviour
     DiarrheaPillsScript diarrheaPillsScript;
     InteractableDetectorScript interactableDetectorScript;
     PlayerHealthScript playerHealthScript;
+    AudioManagerScript audioManagerScript;
     VolumeSettingScript volumeSettingScript;
     FemaleRatScript femaleRatScript;
     GameOverScript gameOverScript;
 
     void Start()
     {
+        audioManagerScript = FindAnyObjectByType<AudioManagerScript>();
         gameOverScript = FindAnyObjectByType<GameOverScript>();
         playerHealthScript = FindAnyObjectByType<PlayerHealthScript>();
         volumeSettingScript = FindAnyObjectByType<VolumeSettingScript>();
@@ -58,6 +60,7 @@ public class PlayerInputScript : MonoBehaviour
         if (context.canceled) animator.SetBool("isWalking", false);
 
         animator.SetBool("isWalking", true);
+        audioManagerScript.PlaySFX(audioManagerScript.WalkSFX);
         movementInput = context.ReadValue<Vector2>();
         animator.SetFloat("InputX", movementInput.x);
         animator.SetFloat("InputY", movementInput.y);
