@@ -19,7 +19,13 @@ public class BiscuitSpawnerScript : MonoBehaviour
     public void callSpawnCookies()
     {
         spawnedCookies = 0;
-        StartCoroutine(spawnCookies());
+        StartCoroutine(DelayedSpawn());
+    }
+
+    IEnumerator DelayedSpawn()
+    {
+        yield return null;
+        yield return StartCoroutine(spawnCookies());
     }
 
     IEnumerator spawnCookies()
