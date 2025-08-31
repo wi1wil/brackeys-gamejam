@@ -7,6 +7,7 @@ public class BiscuitSpawnerScript : MonoBehaviour
     public GameObject biscuitPrefab;
     public GameObject cookiesParent;
     public int spawnedCookies = 0;
+    public LayerMask obstacleMask;
 
     StagesScript stagesScript;
 
@@ -35,7 +36,8 @@ public class BiscuitSpawnerScript : MonoBehaviour
             continue; 
 
             float radius = 0.3f;
-            Collider2D hit = Physics2D.OverlapCircle(randomPos, radius, LayerMask.GetMask("Obstacle", "Biscuit"));
+
+            Collider2D hit = Physics2D.OverlapCircle(randomPos, radius, obstacleMask);
             if (hit == null)
             {
                 Instantiate(biscuitPrefab, randomPos, Quaternion.identity, cookiesParent.transform);
