@@ -50,32 +50,6 @@ MonoBehaviour:
       m_SpriteOverride: {fileID: -6093454415257406297, guid: 628e81b12182e7e489694287d4e93dff, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 4
-  - m_Name: WalkLeft
-    m_Hash: 1036352720
-    m_CategoryList: []
-    m_OverrideEntries:
-    - m_Name: JANITOR_0
-      m_Hash: 247963725
-      m_Sprite: {fileID: 9133123545666702935, guid: 628e81b12182e7e489694287d4e93dff, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: 9133123545666702935, guid: 628e81b12182e7e489694287d4e93dff, type: 3}
-    - m_Name: JANITOR_6
-      m_Hash: 665060728
-      m_Sprite: {fileID: -5101738493120202458, guid: 628e81b12182e7e489694287d4e93dff, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: -5101738493120202458, guid: 628e81b12182e7e489694287d4e93dff, type: 3}
-    - m_Name: JANITOR_8
-      m_Hash: 1845375
-      m_Sprite: {fileID: -8256968631723206187, guid: 628e81b12182e7e489694287d4e93dff, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: -8256968631723206187, guid: 628e81b12182e7e489694287d4e93dff, type: 3}
-    - m_Name: JANITOR_15
-      m_Hash: 365551714
-      m_Sprite: {fileID: 2801521493321960658, guid: 628e81b12182e7e489694287d4e93dff, type: 3}
-      m_FromMain: 0
-      m_SpriteOverride: {fileID: 2801521493321960658, guid: 628e81b12182e7e489694287d4e93dff, type: 3}
-    m_FromMain: 0
-    m_EntryOverrideCount: 4
   - m_Name: WalkRight
     m_Hash: 829942833
     m_CategoryList: []
@@ -100,6 +74,32 @@ MonoBehaviour:
       m_Sprite: {fileID: 2801521493321960658, guid: 628e81b12182e7e489694287d4e93dff, type: 3}
       m_FromMain: 0
       m_SpriteOverride: {fileID: 2801521493321960658, guid: 628e81b12182e7e489694287d4e93dff, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 4
+  - m_Name: WalkLeft
+    m_Hash: 1036352720
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: JANITOR_2
+      m_Hash: 550093153
+      m_Sprite: {fileID: -3666278889908772821, guid: 628e81b12182e7e489694287d4e93dff, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -3666278889908772821, guid: 628e81b12182e7e489694287d4e93dff, type: 3}
+    - m_Name: JANITOR_4
+      m_Hash: 162161748
+      m_Sprite: {fileID: -1315059077250120392, guid: 628e81b12182e7e489694287d4e93dff, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1315059077250120392, guid: 628e81b12182e7e489694287d4e93dff, type: 3}
+    - m_Name: JANITOR_11
+      m_Hash: 312747131
+      m_Sprite: {fileID: 5280335072914797611, guid: 628e81b12182e7e489694287d4e93dff, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 5280335072914797611, guid: 628e81b12182e7e489694287d4e93dff, type: 3}
+    - m_Name: JANITOR_14
+      m_Hash: 583979252
+      m_Sprite: {fileID: 1932206792038491798, guid: 628e81b12182e7e489694287d4e93dff, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1932206792038491798, guid: 628e81b12182e7e489694287d4e93dff, type: 3}
     m_FromMain: 0
     m_EntryOverrideCount: 4
   - m_Name: WalkDown
@@ -129,5 +129,5 @@ MonoBehaviour:
     m_FromMain: 0
     m_EntryOverrideCount: 4
   m_PrimaryLibraryGUID: 
-  m_ModificationHash: 638922379171047235
+  m_ModificationHash: 638922416583397791
   m_Version: 1

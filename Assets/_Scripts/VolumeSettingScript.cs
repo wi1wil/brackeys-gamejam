@@ -12,6 +12,9 @@ public class VolumeSettingScript : MonoBehaviour
     [SerializeField] Slider musicSlider;
     [SerializeField] Slider sfxSlider;
 
+    public Button settingsButton;
+    public Button closeButton;
+
     public GameObject menuPanel;
 
     void OnEnable()
@@ -19,7 +22,8 @@ public class VolumeSettingScript : MonoBehaviour
         masterSlider.value = PlayerPrefs.GetFloat("masterVolume", 0.5f);
         musicSlider.value = PlayerPrefs.GetFloat("musicVolume", 0.5f);
         sfxSlider.value = PlayerPrefs.GetFloat("sfxVolume", 0.5f);
-
+        settingsButton.onClick.AddListener(openMenu);
+        closeButton.onClick.AddListener(openMenu);
         ApplyAllVolumes();
     }
 
@@ -28,18 +32,24 @@ public class VolumeSettingScript : MonoBehaviour
         ApplyAllVolumes();
     }
 
+    public void openMenu()
+    { 
+        if (menuPanel.activeSelf)
+        {
+            menuPanel.SetActive(false);
+        }
+        else
+        {
+            menuPanel.SetActive(true);
+        }
+    }
+
+
     public void OnEscape(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            if (menuPanel.activeSelf)
-            {
-                menuPanel.SetActive(false);
-            }
-            else
-            {
-                menuPanel.SetActive(true);
-            }
+            openMenu();
         }
     }
 

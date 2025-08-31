@@ -14,7 +14,7 @@ public class DiarrheaPillsScript : MonoBehaviour
     public Button yesButton;
     public Button noButton;
 
-    private bool hasTakenOnce = false;
+    public bool hasTakenOnce = false;
     public bool confirmationPanelOpened = false;
 
     void Start()

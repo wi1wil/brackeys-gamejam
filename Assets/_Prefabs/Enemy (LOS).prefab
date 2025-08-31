@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 7867962094497775906}
   - component: {fileID: 1827226020279175662}
   - component: {fileID: 1054043486940047440}
+  - component: {fileID: 5696523895615677210}
+  - component: {fileID: 8430783505752903392}
+  - component: {fileID: 6858901755655068421}
   m_Layer: 0
   m_Name: Enemy (LOS)
   m_TagString: LOS
@@ -77,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -4
-  m_Sprite: {fileID: -8254855586494837932, guid: 510b995c79f58984792b8f9aacd42a76, type: 3}
+  m_Sprite: {fileID: -615297737469510888, guid: 510b995c79f58984792b8f9aacd42a76, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,7 +101,7 @@ Animator:
   m_GameObject: {fileID: 8220212584119806517}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1dc52d4fdafc48f4f9f2476e7f9e3ab6, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -154,8 +157,8 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 4
-  m_BaseOffset: 2.04
+  m_Height: 1.63
+  m_BaseOffset: 2.01
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &1054043486940047440
@@ -184,11 +187,77 @@ MonoBehaviour:
   isPatrolling: 0
   isDroppingPoison: 0
   isAttacking: 0
+  isWalking: 0
   reachedMax: 0
   reachedMin: 0
   target: {fileID: 0}
-  ratPoison: {fileID: 5899612364301553201, guid: e9cea5a2e5be0f241a89c5226f49628a, type: 3}
+  ratPoison: {fileID: 0}
   poisonParent: {fileID: 0}
   patrolPoints: {fileID: 0}
   points: []
   spawnPos: {x: 0, y: 0}
+--- !u!70 &5696523895615677210
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8220212584119806517}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.010249674, y: 0}
+  m_Size: {x: 1.28453, y: 3.9375}
+  m_Direction: 0
+--- !u!114 &8430783505752903392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8220212584119806517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library: []
+  m_SpriteLibraryAsset: {fileID: 7108339969198208228, guid: cd398c44dd349154e8c73224e2534117, type: 3}
+--- !u!114 &6858901755655068421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8220212584119806517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CategoryHash: 1.1133475e-15
+  m_labelHash: 5.803593e-32
+  m_SpriteKey: 0
+  m_SpriteHash: 586097533

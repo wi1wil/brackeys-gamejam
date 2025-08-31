@@ -21,6 +21,7 @@ public class EnemyChaseScript : MonoBehaviour
     public bool isPatrolling = false;
     public bool isDroppingPoison = false;
     public bool isAttacking = false;
+    public bool isWalking = false;
 
     public bool reachedMax = false;
     public bool reachedMin = false;
@@ -37,9 +38,11 @@ public class EnemyChaseScript : MonoBehaviour
     StagesScript stagesScript;
     SpriteRenderer spriteRenderer;
     NavMeshAgent agent;
+    Animator animator;
 
     void Start()
     {
+        animator = GetComponent<Animator>();
         playerInputScript = FindAnyObjectByType<PlayerInputScript>();
         playerHealthScript = FindAnyObjectByType<PlayerHealthScript>();
         stagesScript = FindAnyObjectByType<StagesScript>();
@@ -82,6 +85,18 @@ public class EnemyChaseScript : MonoBehaviour
             updatePoints();
             enemyPatrol();
             isPatrol = true;
+        }
+        Vector2 velocity = agent.velocity;
+
+        if (velocity.magnitude > 0.1f)
+        {
+            animator.SetFloat("InputX", Mathf.Round(velocity.normalized.x));
+            animator.SetFloat("InputY", Mathf.Round(velocity.normalized.y));
+            animator.SetBool("isWalking", true);
+        }
+        else
+        {
+            animator.SetBool("isWalking", false);
         }
     }
 

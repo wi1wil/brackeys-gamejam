@@ -12,7 +12,8 @@ public class SurvivalTimeScript : MonoBehaviour
     public TMP_Text[] stageSurvivalTimeText;
     public TMP_Text totalSurivalTimeText;
 
-    private bool isFinal = false;
+    public bool isFinal = false;
+    public bool isTimerActive = false;
 
     StagesScript stagesScript;
     GameOverScript gameOverScript;
@@ -21,32 +22,31 @@ public class SurvivalTimeScript : MonoBehaviour
     {
         stagesScript = FindAnyObjectByType<StagesScript>();
         gameOverScript = FindAnyObjectByType<GameOverScript>();
-
     }
 
     void Update()
     {
-        if (gameOverScript.isAlive)
+        if (isTimerActive && gameOverScript.isAlive)
         {
             currentStageSurvivalTime[stagesScript.currentStageLevel - 1] += Time.deltaTime;
             UpdateUI();
         }
-        else if (!gameOverScript.isAlive && !isFinal)
+    }
+
+    public void FinalizeSurvivalTime()
+    {
+        totalSurvivalTime = 0;
+        for (int i = 0; i < currentStageSurvivalTime.Length; i++)
         {
-            isFinal = true;
-
-            for (int i = 0; i < currentStageSurvivalTime.Length; i++)
-            {
-                totalSurvivalTime += currentStageSurvivalTime[i];
-            }
-
-            int minutes = Mathf.FloorToInt(totalSurvivalTime / 60);
-            int seconds = Mathf.FloorToInt(totalSurvivalTime % 60);
-            totalSurivalTimeText.text = $"Total: {minutes:00}:{seconds:00}";
-            Debug.Log($"Player died, total survival time is {minutes:00}:{seconds:00}");
+            totalSurvivalTime += currentStageSurvivalTime[i];
         }
 
+        int minutes = Mathf.FloorToInt(totalSurvivalTime / 60);
+        int seconds = Mathf.FloorToInt(totalSurvivalTime % 60);
+        totalSurivalTimeText.text = $"Total: {minutes:00}:{seconds:00}";
 
+        Debug.Log($"Player died, total survival time is {minutes:00}:{seconds:00}");
+        isFinal = true;
     }
 
     void UpdateUI()

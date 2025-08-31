@@ -34,7 +34,10 @@ public class AudioManagerScript : MonoBehaviour
 
     private void Start()
     {
+        bgmSource.ignoreListenerPause = true;
+        bgmSource.ignoreListenerVolume = true;
         bgmSource.clip = backgroundMusic;
+        bgmSource.loop = true;
         bgmSource.Play();
     }
 

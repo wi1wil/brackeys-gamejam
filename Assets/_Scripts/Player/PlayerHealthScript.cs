@@ -38,11 +38,13 @@ public class PlayerHealthScript : MonoBehaviour
     public void TakeDamage()
     {
         currentHealth--;
+        if (currentHealth < 0) currentHealth = 0;
         UpdateHealthBar();
         if (currentHealth <= 0)
         {
             Debug.Log("You died!");
-            gameOverScript.gameOver();
+            if (gameOverScript != null)
+                gameOverScript.gameOver();
         }
         StartCoroutine(DamageFlash());
     }
@@ -56,7 +58,6 @@ public class PlayerHealthScript : MonoBehaviour
         }
         currentHealth++;
         StartCoroutine(DamageFlash());
-        // Add slurp juice sound here or anythin
     }
 
     public void FlashEffect()

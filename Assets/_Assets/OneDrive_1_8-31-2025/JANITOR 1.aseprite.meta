@@ -1,0 +1,1003 @@
+fileFormatVersion: 2
+guid: 6ce008a63e7ba3f4a8bd4a46c1de56cd
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 0
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 0
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638922142566019757
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: JANITOR_Frame_0
+    originalName: 
+    pivot: {x: 0.51282054, y: -0.13636364}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 75
+      width: 39
+      height: 66
+    spriteID: 37659757ae5f6e8418f4e07c5b2587d1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 60, y: 75}
+  - name: JANITOR_Frame_1
+    originalName: 
+    pivot: {x: 0.51282054, y: -0.12307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 297
+      width: 39
+      height: 65
+    spriteID: db7194ad5cadf5f41b360a7c4ca3edc4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 60, y: 297}
+  - name: JANITOR_Frame_2
+    originalName: 
+    pivot: {x: 0.51282054, y: -0.13636364}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 149
+      width: 39
+      height: 66
+    spriteID: fdc84a0ed1193e749889d42ae8bc5b20
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 60, y: 149}
+  - name: JANITOR_Frame_3
+    originalName: 
+    pivot: {x: 0.4871795, y: -0.12307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 370
+      width: 39
+      height: 65
+    spriteID: 311896261574ea04b8f3c347c3346edd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 60, y: 370}
+  - name: JANITOR_Frame_4
+    originalName: 
+    pivot: {x: 0.51282054, y: -0.13636364}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 223
+      width: 39
+      height: 66
+    spriteID: e5e591eed0494cd488e2d3efa0cc9949
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 60, y: 223}
+  - name: JANITOR_Frame_5
+    originalName: 
+    pivot: {x: 0.4864865, y: -0.12698413}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 116
+      y: 77
+      width: 37
+      height: 63
+    spriteID: ab08142f688637d45b6138deb3fb04b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 116, y: 77}
+  - name: JANITOR_Frame_6
+    originalName: 
+    pivot: {x: 0.4864865, y: -0.12307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 443
+      width: 37
+      height: 65
+    spriteID: 5a2e19830228e404d86e08e0a7395503
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 60, y: 443}
+  - name: JANITOR_Frame_7
+    originalName: 
+    pivot: {x: 0.4864865, y: -0.12698413}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 116
+      y: 148
+      width: 37
+      height: 63
+    spriteID: a84568b6d5e66bb49825fc0678bf687e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 116, y: 148}
+  - name: JANITOR_Frame_8
+    originalName: 
+    pivot: {x: 0.4864865, y: -0.12307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 116
+      y: 4
+      width: 37
+      height: 65
+    spriteID: 45add1b33e386eb4f8907dfd8795b0d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 116, y: 4}
+  - name: JANITOR_Frame_9
+    originalName: 
+    pivot: {x: 0.6041667, y: -0.12698413}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 296
+      width: 48
+      height: 63
+    spriteID: 998ce8b33d5eb914d9d6df80b2857b71
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 296}
+  - name: JANITOR_Frame_10
+    originalName: 
+    pivot: {x: 0.6041667, y: -0.12307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 48
+      height: 65
+    spriteID: 7bb769b9541313e4c87e5147ae27ce8f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: JANITOR_Frame_11
+    originalName: 
+    pivot: {x: 0.6041667, y: -0.12698413}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 367
+      width: 48
+      height: 63
+    spriteID: 000eb7384f520b44c978354a56c25947
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 367}
+  - name: JANITOR_Frame_12
+    originalName: 
+    pivot: {x: 0.6041667, y: -0.12307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 77
+      width: 48
+      height: 65
+    spriteID: 0f19990e312c4a740b220a233582fc19
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 77}
+  - name: JANITOR_Frame_13
+    originalName: 
+    pivot: {x: 0.39583334, y: -0.12698413}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 438
+      width: 48
+      height: 63
+    spriteID: 4099db981672286438087bf2c0830eb8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 438}
+  - name: JANITOR_Frame_14
+    originalName: 
+    pivot: {x: 0.39583334, y: -0.12307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 150
+      width: 48
+      height: 65
+    spriteID: 135f3a07fdaf6b249b84e31525b7a2d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 150}
+  - name: JANITOR_Frame_15
+    originalName: 
+    pivot: {x: 0.39583334, y: -0.12698413}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 4
+      width: 48
+      height: 63
+    spriteID: 39a72a501c8bc934c8c7039c20012bc2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 60, y: 4}
+  - name: JANITOR_Frame_16
+    originalName: 
+    pivot: {x: 0.39583334, y: -0.12307693}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 223
+      width: 48
+      height: 65
+    spriteID: 136989c1397cee64b8718d58cced64a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 223}
+  spriteSheetImportData:
+  - name: JANITOR_0
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 438
+      width: 48
+      height: 63
+    spriteID: 39e5ade91ecf93041a20c35606c11c67
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: JANITOR_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 443
+      width: 37
+      height: 65
+    spriteID: 2bacec97b75aaaa4f99064ca29a9cbfc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: JANITOR_2
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 367
+      width: 48
+      height: 63
+    spriteID: 605157f3f0442b749aee78ece4fef0b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: JANITOR_3
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 370
+      width: 39
+      height: 65
+    spriteID: 6c8993b0d7a9f5f4b900f50117bbfb3b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: JANITOR_4
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 296
+      width: 48
+      height: 63
+    spriteID: 6bdfed9c098ce334792937fd9f167033
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: JANITOR_5
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 297
+      width: 39
+      height: 65
+    spriteID: 1d22cff1298a1c64a81bdd60bc7b20e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: JANITOR_6
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 223
+      width: 48
+      height: 65
+    spriteID: 9971f8d7e1e92db42a5a2b651355a158
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: JANITOR_7
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 223
+      width: 39
+      height: 66
+    spriteID: 90cf495264242a94cab848ccd72ef122
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: JANITOR_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 150
+      width: 48
+      height: 65
+    spriteID: 598aa551288b1a24b84f38be5919665b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: JANITOR_9
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 149
+      width: 39
+      height: 66
+    spriteID: f5c4f395ece28f6409ef85f261084c8e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: JANITOR_10
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 116
+      y: 148
+      width: 37
+      height: 63
+    spriteID: 1224655f11d9f7a4298e5bc208925039
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: JANITOR_11
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 77
+      width: 48
+      height: 65
+    spriteID: 52d52fd7053a3c6419d076d18cf63792
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: JANITOR_12
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 75
+      width: 39
+      height: 66
+    spriteID: 92425fd6d1f140b469fdafb431a522d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: JANITOR_13
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 116
+      y: 77
+      width: 37
+      height: 63
+    spriteID: 47f2ee64c4017dc44bae16741c731828
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: JANITOR_14
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 48
+      height: 65
+    spriteID: 96e77cb5ab6207942922189178621368
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: JANITOR_15
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 60
+      y: 4
+      width: 48
+      height: 63
+    spriteID: 4d5e6e0aee8254643b081a7c202edd2b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: JANITOR_16
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 116
+      y: 4
+      width: 37
+      height: 65
+    spriteID: d4c660c74f9f36c4da5964f42ff5dc1a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1888652608
+    name: JANITOR 1
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: JANITOR 1_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 12
+        y: 9
+        width: 39
+        height: 66
+      spriteId: 4d877f751a19eb04d9618d9a51e889b0
+    - name: JANITOR 1_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 12
+        y: 8
+        width: 39
+        height: 65
+      spriteId: 52daee1541138944a86ca92294f5891d
+    - name: JANITOR 1_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 12
+        y: 9
+        width: 39
+        height: 66
+      spriteId: a4de7c58d4201cd4da39f1ceca953a7d
+    - name: JANITOR 1_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 13
+        y: 8
+        width: 39
+        height: 65
+      spriteId: 45e92ca2e3ebaa440a094c1e75e8f037
+    - name: JANITOR 1_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 12
+        y: 9
+        width: 39
+        height: 66
+      spriteId: a11eefba7cb032f4783d1fd93cfaeac8
+    - name: JANITOR 1_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 14
+        y: 8
+        width: 37
+        height: 63
+      spriteId: 06bf311c2eced5541bcb96ec7f331120
+    - name: JANITOR 1_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 14
+        y: 8
+        width: 37
+        height: 65
+      spriteId: 2fce5abf89245cd4c8b44e39816b1123
+    - name: JANITOR 1_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 14
+        y: 8
+        width: 37
+        height: 63
+      spriteId: 48277e4948ef8154d80fb01886486e8d
+    - name: JANITOR 1_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 14
+        y: 8
+        width: 37
+        height: 65
+      spriteId: bc6de9366fe923743b279bac59907559
+    - name: JANITOR 1_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 3
+        y: 8
+        width: 48
+        height: 63
+      spriteId: cc4ea268398888c40b7ca0050adc62bf
+    - name: JANITOR 1_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 3
+        y: 8
+        width: 48
+        height: 65
+      spriteId: 9bdaa9d932d2f7e4595cac554485c411
+    - name: JANITOR 1_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 3
+        y: 8
+        width: 48
+        height: 63
+      spriteId: e209b6527e35b9943848b3f06591c7b7
+    - name: JANITOR 1_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 3
+        y: 8
+        width: 48
+        height: 65
+      spriteId: 15e5cbc67bf3c6546928c0de944495d0
+    - name: JANITOR 1_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 13
+        y: 8
+        width: 48
+        height: 63
+      spriteId: 40cfbe51051f3384095d4f958a388a7f
+    - name: JANITOR 1_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 13
+        y: 8
+        width: 48
+        height: 65
+      spriteId: 62e4cd961a865c243b38fa4189501fb0
+    - name: JANITOR 1_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 13
+        y: 8
+        width: 48
+        height: 63
+      spriteId: ad6d7970d61d6f4458c518c3e288bb53
+    - name: JANITOR 1_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 13
+        y: 8
+        width: 48
+        height: 65
+      spriteId: 32f6cc1d7f6f9144aa562676f6445240
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 64, y: 80}
