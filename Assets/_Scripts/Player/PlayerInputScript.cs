@@ -60,7 +60,6 @@ public class PlayerInputScript : MonoBehaviour
         if (context.canceled) animator.SetBool("isWalking", false);
 
         animator.SetBool("isWalking", true);
-        audioManagerScript.PlaySFX(audioManagerScript.WalkSFX);
         movementInput = context.ReadValue<Vector2>();
         animator.SetFloat("InputX", movementInput.x);
         animator.SetFloat("InputY", movementInput.y);
