@@ -69,11 +69,11 @@ public class PlayerInputScript : MonoBehaviour
     {
         if (slotMachineScript.isGambling)
         {
-            rb.velocity = Vector2.zero;
+            rb.linearVelocity = Vector2.zero;
             return;
         }
 
         Vector2 movementDir = movementInput.normalized;
-        rb.velocity = movementDir * speed;
+        rb.linearVelocity = movementDir * speed;
     }
 }

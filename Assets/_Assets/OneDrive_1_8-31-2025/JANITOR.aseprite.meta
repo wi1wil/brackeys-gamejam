@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -83,6 +84,8 @@ ScriptedImporter:
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
+    generateIndividualEvents: 1
+    generateSpriteAtlas: 1
   asepriteImporterSettings:
     fileImportMode: 0
     importHiddenLayers: 0
@@ -96,6 +99,8 @@ ScriptedImporter:
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
+    generateIndividualEvents: 1
+    generateSpriteAtlas: 1
   importFileNodeState: 1
   platformSettingsDirtyTick: 638922142566019757
   textureAssetName: 
@@ -105,6 +110,7 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 0
@@ -126,6 +132,7 @@ ScriptedImporter:
     pivot: {x: 0.51282054, y: -0.13636364}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 60
@@ -146,6 +153,7 @@ ScriptedImporter:
     pivot: {x: 0.51282054, y: -0.12307693}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 60
@@ -166,6 +174,7 @@ ScriptedImporter:
     pivot: {x: 0.51282054, y: -0.13636364}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 60
@@ -186,6 +195,7 @@ ScriptedImporter:
     pivot: {x: 0.4871795, y: -0.12307693}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 60
@@ -206,6 +216,7 @@ ScriptedImporter:
     pivot: {x: 0.51282054, y: -0.13636364}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 60
@@ -226,6 +237,7 @@ ScriptedImporter:
     pivot: {x: 0.4864865, y: -0.12698413}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 116
@@ -246,6 +258,7 @@ ScriptedImporter:
     pivot: {x: 0.4864865, y: -0.12307693}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 60
@@ -266,6 +279,7 @@ ScriptedImporter:
     pivot: {x: 0.4864865, y: -0.12698413}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 116
@@ -286,6 +300,7 @@ ScriptedImporter:
     pivot: {x: 0.4864865, y: -0.12307693}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 116
@@ -306,6 +321,7 @@ ScriptedImporter:
     pivot: {x: 0.6041667, y: -0.12698413}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -326,6 +342,7 @@ ScriptedImporter:
     pivot: {x: 0.6041667, y: -0.12307693}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -346,6 +363,7 @@ ScriptedImporter:
     pivot: {x: 0.6041667, y: -0.12698413}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -366,6 +384,7 @@ ScriptedImporter:
     pivot: {x: 0.6041667, y: -0.12307693}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -386,6 +405,7 @@ ScriptedImporter:
     pivot: {x: 0.39583334, y: -0.12698413}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -406,6 +426,7 @@ ScriptedImporter:
     pivot: {x: 0.39583334, y: -0.12307693}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -426,6 +447,7 @@ ScriptedImporter:
     pivot: {x: 0.39583334, y: -0.12698413}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 60
@@ -446,6 +468,7 @@ ScriptedImporter:
     pivot: {x: 0.39583334, y: -0.12307693}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -467,6 +490,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -487,6 +511,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 60
@@ -507,6 +532,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -527,6 +553,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 60
@@ -547,6 +574,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -567,6 +595,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 60
@@ -587,6 +616,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -607,6 +637,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 60
@@ -627,6 +658,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -647,6 +679,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 60
@@ -667,6 +700,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 116
@@ -687,6 +721,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -707,6 +742,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 60
@@ -727,6 +763,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 116
@@ -747,6 +784,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -767,6 +805,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 60
@@ -787,6 +826,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 116
@@ -802,144 +842,167 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
+  tileSetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 35286365
+    uuid:
+      value0: 140730129
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 140730129
     name: JANITOR
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: JANITOR_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 12
         y: 9
         width: 39
         height: 66
       spriteId: 37659757ae5f6e8418f4e07c5b2587d1
-    - name: JANITOR_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 12
         y: 8
         width: 39
         height: 65
       spriteId: db7194ad5cadf5f41b360a7c4ca3edc4
-    - name: JANITOR_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 12
         y: 9
         width: 39
         height: 66
       spriteId: fdc84a0ed1193e749889d42ae8bc5b20
-    - name: JANITOR_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 13
         y: 8
         width: 39
         height: 65
       spriteId: 311896261574ea04b8f3c347c3346edd
-    - name: JANITOR_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 12
         y: 9
         width: 39
         height: 66
       spriteId: e5e591eed0494cd488e2d3efa0cc9949
-    - name: JANITOR_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 14
         y: 8
         width: 37
         height: 63
       spriteId: ab08142f688637d45b6138deb3fb04b6
-    - name: JANITOR_Frame_6
+    - name: Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 14
         y: 8
         width: 37
         height: 65
       spriteId: 5a2e19830228e404d86e08e0a7395503
-    - name: JANITOR_Frame_7
+    - name: Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 14
         y: 8
         width: 37
         height: 63
       spriteId: a84568b6d5e66bb49825fc0678bf687e
-    - name: JANITOR_Frame_8
+    - name: Frame_8
       frameIndex: 8
+      additiveSortOrder: 0
       cellRect:
         x: 14
         y: 8
         width: 37
         height: 65
       spriteId: 45add1b33e386eb4f8907dfd8795b0d5
-    - name: JANITOR_Frame_9
+    - name: Frame_9
       frameIndex: 9
+      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 8
         width: 48
         height: 63
       spriteId: 998ce8b33d5eb914d9d6df80b2857b71
-    - name: JANITOR_Frame_10
+    - name: Frame_10
       frameIndex: 10
+      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 8
         width: 48
         height: 65
       spriteId: 7bb769b9541313e4c87e5147ae27ce8f
-    - name: JANITOR_Frame_11
+    - name: Frame_11
       frameIndex: 11
+      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 8
         width: 48
         height: 63
       spriteId: 000eb7384f520b44c978354a56c25947
-    - name: JANITOR_Frame_12
+    - name: Frame_12
       frameIndex: 12
+      additiveSortOrder: 0
       cellRect:
         x: 3
         y: 8
         width: 48
         height: 65
       spriteId: 0f19990e312c4a740b220a233582fc19
-    - name: JANITOR_Frame_13
+    - name: Frame_13
       frameIndex: 13
+      additiveSortOrder: 0
       cellRect:
         x: 13
         y: 8
         width: 48
         height: 63
       spriteId: 4099db981672286438087bf2c0830eb8
-    - name: JANITOR_Frame_14
+    - name: Frame_14
       frameIndex: 14
+      additiveSortOrder: 0
       cellRect:
         x: 13
         y: 8
         width: 48
         height: 65
       spriteId: 135f3a07fdaf6b249b84e31525b7a2d5
-    - name: JANITOR_Frame_15
+    - name: Frame_15
       frameIndex: 15
+      additiveSortOrder: 0
       cellRect:
         x: 13
         y: 8
         width: 48
         height: 63
       spriteId: 39a72a501c8bc934c8c7039c20012bc2
-    - name: JANITOR_Frame_16
+    - name: Frame_16
       frameIndex: 16
+      additiveSortOrder: 0
       cellRect:
         x: 13
         y: 8
@@ -947,7 +1010,10 @@ ScriptedImporter:
         height: 65
       spriteId: 136989c1397cee64b8718d58cced64a9
     linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
     parentIndex: -1
+  tileSets: []
   platformSettings:
   - name: DefaultTexturePlatform
     overridden: 0
@@ -1001,3 +1067,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 64, y: 80}
+  previousTextureSize: {x: 256, y: 512}

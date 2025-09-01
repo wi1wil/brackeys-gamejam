@@ -32,7 +32,7 @@ public class PlayerLadderScript : MonoBehaviour
         if (isClimbing)
         {
             rb.gravityScale = 0f;
-            rb.velocity = new Vector2(rb.velocity.x, vertical * speed);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, vertical * speed);
         }
     }
      

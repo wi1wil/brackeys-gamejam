@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -83,6 +84,8 @@ ScriptedImporter:
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
+    generateIndividualEvents: 1
+    generateSpriteAtlas: 1
   asepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
@@ -96,6 +99,8 @@ ScriptedImporter:
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
+    generateIndividualEvents: 1
+    generateSpriteAtlas: 1
   importFileNodeState: 1
   platformSettingsDirtyTick: 0
   textureAssetName: 
@@ -105,6 +110,7 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 0
@@ -126,6 +132,7 @@ ScriptedImporter:
     pivot: {x: 1.016129, y: -0.07462686}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 93
@@ -146,6 +153,7 @@ ScriptedImporter:
     pivot: {x: 1.016129, y: -0.07462686}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 163
@@ -166,6 +174,7 @@ ScriptedImporter:
     pivot: {x: 0.7777778, y: -0.05970149}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -186,6 +195,7 @@ ScriptedImporter:
     pivot: {x: 1.016129, y: -0.07462686}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 233
@@ -206,6 +216,7 @@ ScriptedImporter:
     pivot: {x: 1.016129, y: -0.05970149}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 303
@@ -226,6 +237,7 @@ ScriptedImporter:
     pivot: {x: 1.016129, y: -0.07462686}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 373
@@ -246,6 +258,7 @@ ScriptedImporter:
     pivot: {x: 1.016129, y: -0.05970149}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 443
@@ -266,6 +279,7 @@ ScriptedImporter:
     pivot: {x: 1.016129, y: -0.07462686}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -286,6 +300,7 @@ ScriptedImporter:
     pivot: {x: 1.016129, y: -0.08955224}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 74
@@ -306,6 +321,7 @@ ScriptedImporter:
     pivot: {x: 0.9074074, y: -0.097222224}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 128
@@ -326,6 +342,7 @@ ScriptedImporter:
     pivot: {x: 0.9074074, y: -0.083333336}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 190
@@ -346,6 +363,7 @@ ScriptedImporter:
     pivot: {x: 0.9074074, y: -0.09859155}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 128
@@ -366,6 +384,7 @@ ScriptedImporter:
     pivot: {x: 0.9074074, y: -0.112676054}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 190
@@ -386,6 +405,7 @@ ScriptedImporter:
     pivot: {x: 0.9074074, y: -0.13432835}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 144
@@ -406,6 +426,7 @@ ScriptedImporter:
     pivot: {x: 0.9074074, y: -0.1}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 376
@@ -426,6 +447,7 @@ ScriptedImporter:
     pivot: {x: 0.9074074, y: -0.08219179}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -446,6 +468,7 @@ ScriptedImporter:
     pivot: {x: 0.9074074, y: -0.097222224}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 252
@@ -466,6 +489,7 @@ ScriptedImporter:
     pivot: {x: 0.9074074, y: -0.097222224}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 314
@@ -486,6 +510,7 @@ ScriptedImporter:
     pivot: {x: 0.9074074, y: -0.14925373}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 206
@@ -506,6 +531,7 @@ ScriptedImporter:
     pivot: {x: 0.0925926, y: -0.097222224}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 376
@@ -526,6 +552,7 @@ ScriptedImporter:
     pivot: {x: 0.0925926, y: -0.083333336}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 438
@@ -546,6 +573,7 @@ ScriptedImporter:
     pivot: {x: 0.0925926, y: -0.09859155}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 252
@@ -566,6 +594,7 @@ ScriptedImporter:
     pivot: {x: 0.0925926, y: -0.112676054}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 314
@@ -586,6 +615,7 @@ ScriptedImporter:
     pivot: {x: 0.0925926, y: -0.13432835}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 268
@@ -606,6 +636,7 @@ ScriptedImporter:
     pivot: {x: 0.0925926, y: -0.1}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 438
@@ -626,6 +657,7 @@ ScriptedImporter:
     pivot: {x: 0.0925926, y: -0.08219179}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 66
@@ -646,6 +678,7 @@ ScriptedImporter:
     pivot: {x: 0.0925926, y: -0.097222224}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -666,6 +699,7 @@ ScriptedImporter:
     pivot: {x: 0.0925926, y: -0.097222224}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 66
@@ -686,6 +720,7 @@ ScriptedImporter:
     pivot: {x: 0.0925926, y: -0.14925373}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 330
@@ -702,240 +737,275 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 330, y: 79}
   spriteSheetImportData: []
+  tileSetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 313624046
+    uuid:
+      value0: 2932619046
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: -1362348250
     name: tikus
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: tikus_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 5
         width: 62
         height: 67
       spriteId: 098fe2d749a82d74aabfc39cb4cfe945
-    - name: tikus_Frame_21
+    - name: Frame_21
       frameIndex: 21
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 5
         width: 62
         height: 67
       spriteId: ef2e5935f54184c40961de78338a2b0d
-    - name: tikus_Frame_22
+    - name: Frame_22
       frameIndex: 22
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 4
         width: 81
         height: 67
       spriteId: 03b84ee0f33b6c74788fb8505873dd48
-    - name: tikus_Frame_23
+    - name: Frame_23
       frameIndex: 23
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 5
         width: 62
         height: 67
       spriteId: 2e63560a2aedb4748b18c5016280b96c
-    - name: tikus_Frame_24
+    - name: Frame_24
       frameIndex: 24
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 4
         width: 62
         height: 67
       spriteId: 4301b5deb976dbb49b28e2af0e64d028
-    - name: tikus_Frame_25
+    - name: Frame_25
       frameIndex: 25
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 5
         width: 62
         height: 67
       spriteId: 9d8b12b79c1e80649a1666d542b66dd5
-    - name: tikus_Frame_26
+    - name: Frame_26
       frameIndex: 26
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 4
         width: 62
         height: 67
       spriteId: 31370200677015644bbb7c430b0c8d87
-    - name: tikus_Frame_27
+    - name: Frame_27
       frameIndex: 27
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 5
         width: 62
         height: 67
       spriteId: 9f98e554c0ebf734d86306a6d46a2ea3
-    - name: tikus_Frame_28
+    - name: Frame_28
       frameIndex: 28
+      additiveSortOrder: 0
       cellRect:
         x: 1
         y: 6
         width: 62
         height: 67
       spriteId: 83ab50232e87c364eb6cd6fa7b1f53de
-    - name: tikus_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 7
         width: 54
         height: 72
       spriteId: eb6fad4f368da264db5b9fd4ef65423d
-    - name: tikus_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 6
         width: 54
         height: 72
       spriteId: 2fd990adae4fc65458d01115523d30a4
-    - name: tikus_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 7
         width: 54
         height: 71
       spriteId: 7e082b9415e0ded418325ab5cb2b5423
-    - name: tikus_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 8
         width: 54
         height: 71
       spriteId: 9de2f856f5274a14484254227990c8f7
-    - name: tikus_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 9
         width: 54
         height: 67
       spriteId: 021ebe680dc32ee478fab31472599392
-    - name: tikus_Frame_6
+    - name: Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 7
         width: 54
         height: 70
       spriteId: fd73ae9b59008cb4e8326adeebacc991
-    - name: tikus_Frame_7
+    - name: Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 6
         width: 54
         height: 73
       spriteId: d6fe011e9ceb0be46b6b5b860e62baef
-    - name: tikus_Frame_8
+    - name: Frame_8
       frameIndex: 8
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 7
         width: 54
         height: 72
       spriteId: 73caed9c055954643b1ed069f1472716
-    - name: tikus_Frame_9
+    - name: Frame_9
       frameIndex: 9
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 7
         width: 54
         height: 72
       spriteId: bcc1d913baac5ac4a8d9aab0c49ca0a9
-    - name: tikus_Frame_10
+    - name: Frame_10
       frameIndex: 10
+      additiveSortOrder: 0
       cellRect:
         x: 15
         y: 10
         width: 54
         height: 67
       spriteId: ea4d8df9dc116d5459c591c86381b171
-    - name: tikus_Frame_11
+    - name: Frame_11
       frameIndex: 11
+      additiveSortOrder: 0
       cellRect:
         x: 59
         y: 7
         width: 54
         height: 72
       spriteId: cfe99a82ee1d4814c847a50a9e0a28ab
-    - name: tikus_Frame_12
+    - name: Frame_12
       frameIndex: 12
+      additiveSortOrder: 0
       cellRect:
         x: 59
         y: 6
         width: 54
         height: 72
       spriteId: 32a670d5ceedc8f47ac7757fd1f9dd07
-    - name: tikus_Frame_13
+    - name: Frame_13
       frameIndex: 13
+      additiveSortOrder: 0
       cellRect:
         x: 59
         y: 7
         width: 54
         height: 71
       spriteId: 9869242ed505e834c926446eca9206b3
-    - name: tikus_Frame_14
+    - name: Frame_14
       frameIndex: 14
+      additiveSortOrder: 0
       cellRect:
         x: 59
         y: 8
         width: 54
         height: 71
       spriteId: 0b23b59ee099a9e4b9faef5b26b336a0
-    - name: tikus_Frame_15
+    - name: Frame_15
       frameIndex: 15
+      additiveSortOrder: 0
       cellRect:
         x: 59
         y: 9
         width: 54
         height: 67
       spriteId: d8712132ce63b5d4c945b30517ee4c83
-    - name: tikus_Frame_16
+    - name: Frame_16
       frameIndex: 16
+      additiveSortOrder: 0
       cellRect:
         x: 59
         y: 7
         width: 54
         height: 70
       spriteId: f2c923030d2e2f9489891d6a9f160e9e
-    - name: tikus_Frame_17
+    - name: Frame_17
       frameIndex: 17
+      additiveSortOrder: 0
       cellRect:
         x: 59
         y: 6
         width: 54
         height: 73
       spriteId: fe4856c9a9578504099acb95a57fe644
-    - name: tikus_Frame_18
+    - name: Frame_18
       frameIndex: 18
+      additiveSortOrder: 0
       cellRect:
         x: 59
         y: 7
         width: 54
         height: 72
       spriteId: a3fa0bab8fb17ed4bb7b70a449e015c6
-    - name: tikus_Frame_19
+    - name: Frame_19
       frameIndex: 19
+      additiveSortOrder: 0
       cellRect:
         x: 59
         y: 7
         width: 54
         height: 72
       spriteId: ad0b977a8cdccbe44a55c1cc5f21fa2a
-    - name: tikus_Frame_20
+    - name: Frame_20
       frameIndex: 20
+      additiveSortOrder: 0
       cellRect:
         x: 59
         y: 10
@@ -943,9 +1013,13 @@ ScriptedImporter:
         height: 67
       spriteId: 85b619929a846ce49869f7dee2e48450
     linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
     parentIndex: -1
+  tileSets: []
   platformSettings: []
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 128, y: 81}
+  previousTextureSize: {x: 512, y: 512}

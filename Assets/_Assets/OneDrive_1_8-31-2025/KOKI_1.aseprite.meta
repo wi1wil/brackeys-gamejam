@@ -8,6 +8,7 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  importerVersion: 2
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
@@ -83,6 +84,8 @@ ScriptedImporter:
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
+    generateIndividualEvents: 1
+    generateSpriteAtlas: 1
   asepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
@@ -96,6 +99,8 @@ ScriptedImporter:
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
+    generateIndividualEvents: 1
+    generateSpriteAtlas: 1
   importFileNodeState: 1
   platformSettingsDirtyTick: 638922356523320797
   textureAssetName: 
@@ -105,6 +110,7 @@ ScriptedImporter:
     pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 0
@@ -126,6 +132,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.05333334}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 86
@@ -146,6 +153,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.05479452}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 126
@@ -166,6 +174,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.05333334}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 86
@@ -186,6 +195,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.05479452}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 166
@@ -206,6 +216,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.05333334}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 86
@@ -226,6 +237,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.05479452}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 166
@@ -246,6 +258,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.05333334}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 126
@@ -266,6 +279,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.05479452}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 166
@@ -286,6 +300,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.05333334}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 126
@@ -306,6 +321,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.04166667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 206
@@ -326,6 +342,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.025974026}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -346,6 +363,7 @@ ScriptedImporter:
     pivot: {x: 0.47058824, y: -0.02739726}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -366,6 +384,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.025974026}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 46
@@ -386,6 +405,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.04166667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 206
@@ -406,6 +426,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.025974026}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 46
@@ -426,6 +447,7 @@ ScriptedImporter:
     pivot: {x: 0.5294118, y: -0.02739726}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 4
@@ -446,6 +468,7 @@ ScriptedImporter:
     pivot: {x: 0.5, y: -0.025974026}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
     rect:
       serializedVersion: 2
       x: 46
@@ -462,144 +485,167 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 46, y: 174}
   spriteSheetImportData: []
+  tileSetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1417805636
+    uuid:
+      value0: 1139519828
+      value1: 0
+      value2: 0
+      value3: 0
+    guid: 1139519828
     name: KOKI_1
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: KOKI_1_Frame_0
+    - name: Frame_0
       frameIndex: 0
+      additiveSortOrder: 0
       cellRect:
         x: 16
         y: 4
         width: 32
         height: 75
       spriteId: 8ef54960538718340a3d01a0f6f8b44b
-    - name: KOKI_1_Frame_1
+    - name: Frame_1
       frameIndex: 1
+      additiveSortOrder: 0
       cellRect:
         x: 16
         y: 4
         width: 32
         height: 73
       spriteId: cdf5b5cb2b3f583469630e5eb74c95c9
-    - name: KOKI_1_Frame_2
+    - name: Frame_2
       frameIndex: 2
+      additiveSortOrder: 0
       cellRect:
         x: 16
         y: 4
         width: 32
         height: 75
       spriteId: fd26050beb4cd57478cbdee7964e49ad
-    - name: KOKI_1_Frame_3
+    - name: Frame_3
       frameIndex: 3
+      additiveSortOrder: 0
       cellRect:
         x: 16
         y: 4
         width: 32
         height: 73
       spriteId: 0e6fa38e9cbd8434685af56d75d6d2e7
-    - name: KOKI_1_Frame_4
+    - name: Frame_4
       frameIndex: 4
+      additiveSortOrder: 0
       cellRect:
         x: 16
         y: 4
         width: 32
         height: 75
       spriteId: 68a3106b32ecf144199c26ae13e8f4d0
-    - name: KOKI_1_Frame_5
+    - name: Frame_5
       frameIndex: 5
+      additiveSortOrder: 0
       cellRect:
         x: 16
         y: 4
         width: 32
         height: 73
       spriteId: e08f61aa5bfce584b8bba360dfaaf0cd
-    - name: KOKI_1_Frame_6
+    - name: Frame_6
       frameIndex: 6
+      additiveSortOrder: 0
       cellRect:
         x: 16
         y: 4
         width: 32
         height: 75
       spriteId: 42a407a37db942a48ae11f24bc816896
-    - name: KOKI_1_Frame_7
+    - name: Frame_7
       frameIndex: 7
+      additiveSortOrder: 0
       cellRect:
         x: 16
         y: 4
         width: 32
         height: 73
       spriteId: eeed4af41e107f04690f6c207e855f26
-    - name: KOKI_1_Frame_8
+    - name: Frame_8
       frameIndex: 8
+      additiveSortOrder: 0
       cellRect:
         x: 16
         y: 4
         width: 32
         height: 75
       spriteId: d61b0fb49e2632544b20f27fc125ed19
-    - name: KOKI_1_Frame_9
+    - name: Frame_9
       frameIndex: 9
+      additiveSortOrder: 0
       cellRect:
         x: 16
         y: 3
         width: 32
         height: 72
       spriteId: 589f66157939aa9439e58dd8d8863d67
-    - name: KOKI_1_Frame_10
+    - name: Frame_10
       frameIndex: 10
+      additiveSortOrder: 0
       cellRect:
         x: 16
         y: 2
         width: 32
         height: 77
       spriteId: 8a5c857e3ba45a24ca1f555295838115
-    - name: KOKI_1_Frame_11
+    - name: Frame_11
       frameIndex: 11
+      additiveSortOrder: 0
       cellRect:
         x: 16
         y: 2
         width: 34
         height: 73
       spriteId: f3a260f1c3b0c9048ab68982e567c505
-    - name: KOKI_1_Frame_12
+    - name: Frame_12
       frameIndex: 12
+      additiveSortOrder: 0
       cellRect:
         x: 16
         y: 2
         width: 32
         height: 77
       spriteId: ef48f22edec8f0d419d1ff4580f9ebd1
-    - name: KOKI_1_Frame_13
+    - name: Frame_13
       frameIndex: 13
+      additiveSortOrder: 0
       cellRect:
         x: 16
         y: 3
         width: 32
         height: 72
       spriteId: 30fca6f9df332324e82348a87dc75903
-    - name: KOKI_1_Frame_14
+    - name: Frame_14
       frameIndex: 14
+      additiveSortOrder: 0
       cellRect:
         x: 16
         y: 2
         width: 32
         height: 77
       spriteId: c4409972788782048b776cd0ebfedfa8
-    - name: KOKI_1_Frame_15
+    - name: Frame_15
       frameIndex: 15
+      additiveSortOrder: 0
       cellRect:
         x: 14
         y: 2
         width: 34
         height: 73
       spriteId: 5ac024c13554f4e4596e5800d52ac588
-    - name: KOKI_1_Frame_16
+    - name: Frame_16
       frameIndex: 16
+      additiveSortOrder: 0
       cellRect:
         x: 16
         y: 2
@@ -607,7 +653,10 @@ ScriptedImporter:
         height: 77
       spriteId: 1fc45c68354ed8244b64314a4bb96525
     linkedCells: []
+    tileCells: []
+    tileSetIndex: 0
     parentIndex: -1
+  tileSets: []
   platformSettings:
   - name: DefaultTexturePlatform
     overridden: 0
@@ -661,3 +710,4 @@ ScriptedImporter:
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 64, y: 80}
+  previousTextureSize: {x: 256, y: 256}
