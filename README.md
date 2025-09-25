@@ -24,7 +24,7 @@
   <tr>
     <!-- Left Image -->
     <td width="30%" align="center" valign="middle" style="padding:15px;">
-      <img src="https://github.com/yourusername/BellyBetCookies/raw/main/logo.png" width="220"/>
+      <img src="https://github.com/wi1wil/brackeys-gamejam/raw/main/bellybetcookies.png" width="220"/>
     </td>
     <!-- Right Text -->
     <td width="70%" valign="top" style="padding:15px;">
