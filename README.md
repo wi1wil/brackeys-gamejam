@@ -3,16 +3,16 @@
   <tr>
     <!-- Top large gif -->
     <td colspan="2" align="center">
-      <img src="https://github.com/yourusername/BellyBetCookies/raw/main/bbc1.gif" width="100%"/>
+      <img src="https://github.com/wi1wil/brackeys-gamejam/raw/main/eat.gif" width="100%"/>
     </td>
   </tr>
   <tr>
     <!-- Bottom two gifs -->
     <td align="center" width="50%">
-      <img src="https://github.com/yourusername/BellyBetCookies/raw/main/bbc2.gif" width="100%"/>
+      <img src="https://github.com/wi1wil/brackeys-gamejam/raw/main/enemy.gif" width="100%"/>
     </td>
     <td align="center" width="50%">
-      <img src="https://github.com/yourusername/BellyBetCookies/raw/main/bbc3.gif" width="100%"/>
+      <img src="https://github.com/wi1wil/brackeys-gamejam/raw/main/Gamble.gif" width="100%"/>
     </td>
   </tr>
 </table>
