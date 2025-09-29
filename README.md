@@ -3,7 +3,7 @@
   <tr>
     <!-- Top large gif -->
     <td colspan="2" align="center">
-      <img src="./Assets/ReadMe/Gamble.gif" width="100%"/>
+      <img src="./Assets/ReadMe/eat.gif" width="100%"/>
     </td>
   </tr>
   <tr>
@@ -12,7 +12,7 @@
       <img src="./Assets/ReadMe/enemy.gif" width="100%"/>
     </td>
     <td align="center" width="50%">
-      <img src="./Assets/ReadMe/eat.gif" width="100%"/>
+      <img src="./Assets/ReadMe/Gamble.gif" width="100%"/>
     </td>
   </tr>
 </table>
