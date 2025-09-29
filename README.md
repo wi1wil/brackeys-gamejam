@@ -117,7 +117,7 @@ BellyBetCookies                   # Root folder of the project
     <td align="left">
       <b>Wilson H.</b><br/>
       <sub>Lead Programmer</sub><br/>
-      <p style="margin:0;">Implemented core gameplay, and all the mechanics.</p>
+      <p style="margin:0;">Designed and implemented the core gameplay and mechanics, allocating roughly 16 hours (two full workdays) to development.</p>
     </td>
   </tr>
   <tr>
